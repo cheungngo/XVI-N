@@ -1,0 +1,93 @@
+cmd: ['/workspace/tmp/venv/bin/python', '/workspace/XVI-N-r10/code/regression_N.py']
+rc: 0
+seconds: 90.91518950462341
+
+STDOUT:
+PASS-MATH N-Norm_free 
+PASS-MATH generator 
+PASS-MATH source_of_truth 
+PASS-MATH ms_coefficients_match_SOT 
+PASS-MATH root_adjoint_H 
+PASS-MATH H_formula_recorded 
+PASS-MATH Ddiv_Dgf_certificate 
+PASS-MATH H_direct_eq_reduced_traceful 
+PASS-MATH EA_commutation 
+PASS-MATH H_formula_corrected_in_cert 
+PASS-MATH special_family_4D_pass 
+PASS-MATH corrected_w_on_U 
+PASS-MATH H_on_U_2m0 
+PASS-MATH complete_original_pairing 
+PASS-MATH cubicvar_pointwise 
+PASS-MATH validated_enclosure_excludes_0 
+PASS-MATH 1p1_corrected 
+PASS-MATH nins3_decision_pass 
+PASS-MATH nins3_status_r9_conditional 
+PASS-MATH nins4_Unresolved 
+PASS-MATH A2_support_lemma 
+PASS-MATH A2_cone_in_plateau 
+PASS-MATH A3_admission 
+PASS-MATH A3_Glin_mod_BoxPhi 
+PASS-MATH A4_projection 
+PASS-MATH A4_shell_vanishing 
+PASS-MATH B2_schema_pass 
+PASS-MATH B2_status_certified 
+PASS-MATH B2_C_hi_le_17843 
+PASS-MATH B2_advertised_interval 
+PASS-MATH B2_has_conditional_on 
+PASS-MATH B2_no_legacy_only 
+PASS-PACK no_reversed_antifield_rule 
+PASS-PACK S_inv_bullet 
+PASS-PACK corrected_w_in_tex 
+PASS-PACK no_exact_obstruction_1p1 
+PASS-PACK 1p1_label 
+PASS-PACK status_downgraded_r9 
+PASS-PACK route_A_sufficient 
+PASS-PACK bump_membership_supp_closed 
+PASS-PACK support_lemma_present 
+PASS-PACK thm_massless_present 
+PASS-PACK admission_section 
+PASS-PACK projection_lemma 
+PASS-PACK small_mass_section 
+PASS-PACK scaling_unavailable 
+PASS-PACK Ddiv_cert_present 
+PASS-PACK nins3_decision_cert 
+PASS-PACK factorization_md 
+PASS-PACK a_root_in_tex 
+PASS-PACK Saf_expanded_minus_c 
+PASS-MATH sPsi 
+PASS-MATH af0 
+PASS-PACK toy_witness_absent 
+PASS-PACK failing_witness_cert_absent 
+PASS-MATH onshell_structural 
+PASS-MATH J3_pol_nonzero_on_shell 
+PASS-MATH A_zero_TT 
+PASS-MATH not_toy 
+PASS-MATH parity_control_recompute 
+PASS-MATH parity_I0_zero 
+PASS-MATH classical_bv 
+PASS-MATH BRST_s2 
+PASS-MATH audit_inadmissible_withdrawn 
+PASS-MATH NIns3_status_in_reduction_cert 
+PASS-PACK tD_definition_md 
+PASS-PACK admissibility_md 
+PASS-PACK seed_deriv 
+PASS-PACK Jt_tex 
+PASS-PACK N-Ins.3_status_r9 
+PASS-PACK N-Ins.4_Unresolved 
+PASS-PACK proved_obstructed_withdrawn 
+PASS-PACK toy_removed_flag 
+PASS-PACK inadmissible_flag 
+PASS-PACK tex_Unresolved 
+PASS-PACK tex_admissible 
+PASS-PACK tex_actual_tD 
+PASS-PACK tex_Saf 
+PASS-PACK tex_Bg 
+PASS-PACK tex_RELEASE 
+PASS-PACK no_inadmissible_claim_as_proved 
+---
+math_passed=44 math_failed=0
+pack_passed=37 pack_failed=0
+
+
+STDERR:
+

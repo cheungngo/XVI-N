@@ -1,0 +1,75 @@
+\documentclass{article}
+\input{preamble.tex}
+
+\title{Landmark XVI-N --- Appendix companion\\
+\large Computational listings, notes archive, and provenance\\
+\large Companion to the science volume (r12)}
+\author{XVI-N r12 appendix volume}
+\date{2026-10-07}
+
+\begin{document}
+\maketitle
+\noindent\textbf{Appendix volume --- not the scientific claims document.}
+This PDF is the companion to \texttt{XVI-N-science.pdf}. It collects:
+\begin{itemize}
+\item Part~II --- computational appendix (scripts and certificates);
+\item Part~III --- notes-source archive;
+\item Part~IV --- provenance manuscript listings and the release manifest.
+\end{itemize}
+Scientific theorems, statuses, and the certified small-mass interval are stated only in
+the science volume (\texttt{XVI-N-science.pdf}) and in the combined release
+(\texttt{XVI-N.pdf}). Do not treat this appendix as a standalone claims document.
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\part{Computational appendix}
+%=====================================================================
+\input{body/part2_listings.tex}
+
+%=====================================================================
+\part{Notes appendix}
+%=====================================================================
+\input{body/part3_notes.tex}
+
+%=====================================================================
+\part{Provenance and references}
+%=====================================================================
+% Provenance manuscripts are included as verbatim source listings to avoid
+% macro clashes with the main document while preserving the full original text
+% and recorded hashes. Cleaned body extracts also ship under provenance/*-body.tex.
+\section{Provenance manuscripts (full source listings)}
+\label{app:prov}
+The XVI-M baseline sha256 is
+\texttt{41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea}
+(verified unchanged against the package baseline).
+
+\subsection{Baseline hashes and manifests}
+\lstinputlisting[style=text]{listing_src/provenance/baseline_sha256.txt}
+\lstinputlisting[style=text]{listing_src/provenance/baseline_sha256_revision.txt}
+\lstinputlisting[style=json]{listing_src/provenance/N_dependency_manifest.json}
+\lstinputlisting[style=json]{listing_src/provenance/XVI-M_conventions.json}
+
+\subsection{Landmark XI-A (full source)}
+\label{app:XIA}
+\textbf{sha256:} see inventory / \texttt{sha256sum provenance/XI-A.tex}.
+\lstinputlisting[style=texfrag,caption={XI-A.tex}]{listing_src/provenance/XI-A.tex}
+
+\subsection{Landmark XI-B (full source)}
+\label{app:XIB}
+\lstinputlisting[style=texfrag,caption={XI-B.tex}]{listing_src/provenance/XI-B.tex}
+
+\subsection{Landmark XII-C (full source)}
+\label{app:XIIC}
+\lstinputlisting[style=texfrag,caption={XII-C.tex}]{listing_src/provenance/XII-C.tex}
+
+\subsection{Landmark XVI-M (full source)}
+\label{app:XVIM}
+\lstinputlisting[style=texfrag,caption={XVI-M.tex}]{listing_src/provenance/XVI-M.tex}
+
+\subsection{RELEASE\_MANIFEST}
+\label{app:manifest}
+\lstinputlisting[style=text]{listing_src/provenance/RELEASE_MANIFEST.txt}
+
+\end{document}

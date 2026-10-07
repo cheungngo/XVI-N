@@ -1,0 +1,19 @@
+{
+  "gate": "N-Ins.3_4D_kirchhoff_corrected",
+  "kind": "numerical corroboration only (not a certificate)",
+  "12x8": {
+    "s0Ft_corrected": -0.00012768965524841998,
+    "s0Ft_superseded": -0.00027087113370959196,
+    "hits": 1926836
+  },
+  "16x10": {
+    "s0Ft_corrected": -0.0001312033857916685,
+    "s0Ft_superseded": -0.00024983249746384097,
+    "hits": 9986276
+  },
+  "r7_record_superseded": {
+    "16x10": -0.0029129105310646297,
+    "12x8": -0.0026692965604217943
+  },
+  "elapsed_s": 2.3
+}

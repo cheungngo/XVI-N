@@ -1,0 +1,57 @@
+{
+  "gate": "independent_weighted_euler_route",
+  "pass": true,
+  "n_ok": 8,
+  "n_trials": 8,
+  "method": "Start from displayed density sigma*ell_3 with ell_3 from eq:ell3 (curvature expansion only). Verify cubic homogeneity. Cross-check XII-C lem:divergence N0(J3)+Q(A)=0 via af0 dual pack. Full Euler_h(sigma ell_3)=sigma J3+Dsource taken as imported XII-C written theorem (lem:weighted-curvature / thm:actualsource); this script does not re-derive J3 from scratch but refuses to treat Method-1 IBP as an independent Euler proof.",
+  "trials": [
+    {
+      "i": 0,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 1,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 2,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 3,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 4,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 5,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 6,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    },
+    {
+      "i": 7,
+      "cubic_homog": true,
+      "lem": true,
+      "dens_id": true
+    }
+  ]
+}

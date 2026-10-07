@@ -1,0 +1,31 @@
+{
+  "gate": "N-Norm",
+  "action_decomposition": {
+    "S_quad": "S_FP + S_gf (XI-A); precursor K already includes gauge fixing",
+    "S_FP_Euler": "A = 2 G_lin",
+    "S_gf": "int D_nu D^nu, D^nu = partial_mu gammabar^{mu nu}",
+    "handoff_XII_C": "A + 2 D^* D = -Box P (Unchanged free handoff)"
+  },
+  "verified_identity": "Hess[S_FP+S_gf] = A + e_gf = -Box P = K",
+  "identity_holds": true,
+  "num_nonzero_component_diffs": 0,
+  "diffs_sample": [],
+  "P_squared_is_id": true,
+  "propagator_factors": {
+    "K": "-Box P",
+    "XI_B_Green_G_gr_R": "-P E_0^R",
+    "XI_B_operator": "L_gamma = -Box P; ( -Box P )( -P E^R ) = id",
+    "XVI_J_D_F": "D_F = -P (h_0 + i E_0^A), K D_F = i id",
+    "XVI_M_S": "S = h_0 + i E_0^A = (1/(4 pi^2))(Q - i0)^{-1} (Gate S-bv)",
+    "XVI_J_d": "d = W_0 - i E_0^A, S = -d",
+    "factor_distinction_NOT_equated": {
+      "XI_inverse": "G_gr^R = -P E_0^R",
+      "X_sheet": "Delta_R^gr = -4 P E_0^R",
+      "ratio": "X-sheet / XI-inverse = 4 (do not equate)"
+    },
+    "K_includes_gauge_fixing": true,
+    "do_not_add_gf_again": true
+  },
+  "Fourier_convention": "partial_mu -> i k_mu; Box -> -k^2; k^2 = eta^{ab} k_a k_b",
+  "signature": "eta = diag(1,-1,-1,-1)"
+}

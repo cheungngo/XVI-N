@@ -1,0 +1,109 @@
+{
+  "gate": "N-Ins.3_4D_special_family_analytic",
+  "A_special_family_factorization_alpha_eq_(g-sigma)a^{mu1}d_mu v_f": true,
+  "B_Ddiv_alpha_source_identity": true,
+  "B_formula": "(D_div alpha)^b = d_a(g-sigma) a^{mu1,ab} d_mu v_f - 1/2 (g-sigma) eta^{b1} Box v_f ;  Box v_f = f (m=0)",
+  "B_support": "supp D_div alpha c (supp d(g-sigma) n supp dv_f) u (supp(g-sigma) n supp f); ramp-only iff the second set is empty, e.g. supp f c Int{g=sigma}",
+  "B_trace_alpha_eq_(g-sigma)d^1 v_f": true,
+  "B_note_old_vs_new": "D_div P alpha = D_div alpha - 1/2 grad tr alpha, tr alpha=(g-sigma) d^1 v_f != 0: the superseded source differs by a gradient",
+  "C": {
+    "J_on_cones": [
+      "x*Derivative(S(t), t)",
+      "3*S(t)",
+      "0",
+      "0"
+    ],
+    "J_old_on_cones": [
+      "0",
+      "4*S(t)",
+      "0",
+      "0"
+    ],
+    "w_corrected_on_U": [
+      "-m0*x",
+      "-3*(m0*t - m1)",
+      "0",
+      "0"
+    ],
+    "w_old_on_U_superseded": [
+      "0",
+      "-4*(m0*t - m1)",
+      "0",
+      "0"
+    ],
+    "Box_w_zero_on_U": true,
+    "Box_a_root_zero_on_U": true,
+    "alpha_on_U": "0 (S=0 for t<2, so g=sigma=1 and alpha=(g-sigma)(...)=0 on a neighbourhood of closure(U))",
+    "H_direct_eq_H_red_on_U": true,
+    "H_direct_eq_H_old_on_U": false,
+    "H_on_U": {
+      "01": "2*m0"
+    },
+    "H_old_on_U_superseded": {
+      "01": "4*m0"
+    },
+    "D_div_H_zero_on_U": true
+  },
+  "h": "h_12=h_21=p(t-z), p(u)=p1 u+p2 u^2 (TT plane wave; G_lin h=0; curvature ~ p2)",
+  "h_on_shell": true,
+  "C_on_U": [
+    "0",
+    "0",
+    "-4*m0*(-p1 - 2*p2*t + 2*p2*z)",
+    "0"
+  ],
+  "C_old_on_U_superseded": [
+    "0",
+    "0",
+    "-8*m0*(-p1 - 2*p2*t + 2*p2*z)",
+    "0"
+  ],
+  "C_on_U_nonzero": true,
+  "D_IBP_identity_-<H,L_xi h>=<C,xi>+div": true,
+  "D_C_equals_XIIC_Q_nu(H)": true,
+  "D_L_xi_h_convention": "L_xi h_{mu nu}=xi^rho d_rho h_{mu nu}+h_{rho nu}d_mu xi^rho+h_{mu rho}d_nu xi^rho (linear in h; R_0 xi is the separate kappa^0 term s_0 h)",
+  "E": {
+    "E0_J3_copy_matches_grav_density": true,
+    "E1_A_h_zero_identically": true,
+    "E2_cubicvar_pointwise_2J3pol(Rxi,h)=-A(L_xi h)": true,
+    "E2_points": 6,
+    "E3_control_drop_transport_term_fails": true,
+    "E4_R0xi_term_immaterial_since_A_R0=0": true
+  },
+  "F": {
+    "box": [
+      [
+        "19/20",
+        "21/20"
+      ],
+      [
+        "-1/20",
+        "1/20"
+      ],
+      [
+        "-1/20",
+        "1/20"
+      ],
+      [
+        "-1/20",
+        "1/20"
+      ]
+    ],
+    "xi": "xi = e_2 * prod_i ((X_i-lo_i)(hi_i-X_i))^3 on the box (C^2, vanishing to 2nd order at the boundary)",
+    "I_A_-<a_root,A L_xi h>": "m0*(p1 + 2*p2)/960400000000000000000000000000000000",
+    "I_H_-<H,L_xi h>": "m0*(p1 + 2*p2)/960400000000000000000000000000000000",
+    "I_C_<C,xi>": "m0*(p1 + 2*p2)/960400000000000000000000000000000000",
+    "I_closed_4m0_int_pprime_chi": "m0*(p1 + 2*p2)/960400000000000000000000000000000000",
+    "I_A_eq_I_H_eq_I_C_eq_closed": true,
+    "I_orig_profile": "p1=1, p2=1/2",
+    "I_exact_at_profile_m0_coeff": "1/480200000000000000000000000000000000",
+    "I_orig_2int_a:J3pol(Rxi,h)_m0_coeff": "2.082465639316951270304039983340274885459e-36",
+    "I_orig_m1_coeff": "5.07536375928299377827543372088857286377e-75",
+    "I_orig_vs_exact_rel_dev": "2.457e-39",
+    "I_orig_matches": true,
+    "gauss_seconds": 267.9
+  },
+  "conclusion": "On U (special family, m=0 instance, admissible C^infty data): H|_U = 2 m0 (e_0 e_1 + e_1 e_0), m0 = int S > 0; C|_U = 4 m0 p'(t-z) dx^2 (only C_2 != 0). For every xi in C_c^infty(U;TM): s0F_t = 4 m0 int p'(t-z) xi^2 d^4x. Choosing p'>0 on supp xi and xi^2>=0, xi^2 != 0 gives s0F_t>0. Superseded vector w_old gives H_old = 4 m0 (e0e1+e1e0) (factor 2 too large, same sign).",
+  "pass": true,
+  "elapsed_s": 527.7
+}

@@ -1,0 +1,18 @@
+Gate N-Prep
+verdict: PASS
+chosen_route: C (explicit classical breaking)
+Route A proved: False (REFUTED as primary identification)
+Route B proved: False
+Route C proved: True
+  Dsource_vanishes_on_plateau: True
+  trace_Dsource_matches_XII_C: True
+  trace_Dsource_expr: -6*psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)
+  bulk_mismatch_for_constant_w: True
+  bulk_mismatch_expr_const_sigma: 6*c*Derivative(psi(t), t)*Derivative(psi(t), (t, 2)) - 6*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))
+  Q0_A_pure_trace: -6*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))
+  plateau_preparation_breaking_vanishes: True
+  Dsource_00: -3*psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)
+  Dsource_11: psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)
+Classical broken identity (pure gravity, O(kappa)):
+  N_nu(e_D) = kappa [ -w Q_nu(A gamma) + Rampdef_sigma,nu ] + O(kappa^2)
+Distinct from quantum anomaly: True

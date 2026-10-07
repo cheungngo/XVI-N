@@ -1,0 +1,35 @@
+rc=1
+STDOUT:
+loc/tests/test_convention_consistency.py  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_schema_failure.py  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_repro_and_failure.py --unit  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/conventions/source_of_truth.py  (cwd=/tmp/XVI-N-r12-reloc/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/conventions/check_ms_coefficients.py  (cwd=/tmp/XVI-N-r12-reloc/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/brst_normalization.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (4.2s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/qd2_antifield_test.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (13.6s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/qd2_general_jets.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (26.4s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/extended_action_master.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/classical_bv_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (4.6s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/generator_antibracket_test.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/field_only_projection_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (8.7s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/s_psi_coefficients.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/normalization/free_hessian_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/normalization)
+OK (0.4s)
+
+STDERR:
+REQUIRED SCRIPT MISSING before prep:
+  /tmp/XVI-N-r12-reloc/code/prep/prepared_gauge_variation.py
+

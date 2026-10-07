@@ -1,0 +1,54 @@
+{
+  "a": "1/2",
+  "vertices": [
+    {
+      "id": "V2_grav",
+      "order": "kappa^0",
+      "fields": "h h",
+      "operator": "K=-Box P",
+      "factor": "1",
+      "source": "S_FP+S_gf"
+    },
+    {
+      "id": "V2_ghost",
+      "order": "kappa^0",
+      "fields": "cbar c",
+      "operator": "i Box",
+      "factor": "i",
+      "source": "s0 Psi after elim b"
+    },
+    {
+      "id": "V3_grav_prep",
+      "order": "kappa^1",
+      "fields": "h h h",
+      "density": "sigma_eps * ell_3",
+      "factor": "kappa",
+      "source": "S_grav,D"
+    },
+    {
+      "id": "V3_ghost_grav",
+      "order": "kappa^1",
+      "fields": "cbar c h",
+      "density": "2 i a cbar_mu D^mu(L_c h)",
+      "factor": "kappa * 2 i a",
+      "source": "s1 in s Psi"
+    },
+    {
+      "id": "V_af_h",
+      "order": "kappa^0 + kappa^1",
+      "fields": "h^* c (+h)",
+      "density": "h^* (R_0(c) + kappa a L_c h)",
+      "factor": "1",
+      "source": "master action"
+    },
+    {
+      "id": "V_af_c",
+      "order": "kappa^1",
+      "fields": "c^* c c",
+      "density": "- c^*_mu (a c^rho partial_rho c^mu)",
+      "factor": "- kappa a",
+      "source": "master action"
+    }
+  ],
+  "graph_vs_action_relation": "Relation between predecessor selected graph vertex V=int chi_I ell_3 and the newly normalized action vertices is NOT YET SETTLED. What is settled: action uses sigma_eps weight; graph uses chi_I; they are distinct external data. What is not: numerical identification of graph normalization with V3_grav_prep after ghost/gauge fixing."
+}

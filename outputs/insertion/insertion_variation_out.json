@@ -1,0 +1,63 @@
+{
+  "gate": "insertion_variation_sFt",
+  "pass": true,
+  "s0_F_t_zero": false,
+  "ledger": {
+    "a": "1/2",
+    "F_t": "<t_D, h \u2297 h \u2297 phi>",
+    "policy": "t_D fixed (s t_D = 0)",
+    "s0_h": "R_0(c)",
+    "s0_phi": "0",
+    "s1_h": "a L_c h",
+    "s1_phi": "a c^rho d_rho phi",
+    "s0_F_t": "2 <t_D, (R_0 c) \u2297 h \u2297 phi>",
+    "s0_F_t_vanishes": false,
+    "s0_F_t_modulo": "not modulo a free EOM identity in general; nonzero for generic (t_D,h,phi,c) as in XVI-I eq:s0Ft",
+    "s1_F_t": "2 <t_D, (a L_c h) \u2297 h \u2297 phi> + <t_D, h \u2297 h \u2297 (a c\u00b7\u2202 phi)>",
+    "term_ledger": [
+      {
+        "term": "bulk s0 from h slots",
+        "support": "supp(t_D)",
+        "order": "kappa^0",
+        "formula": "2<t_D,R0(c)\u2297h\u2297phi>"
+      },
+      {
+        "term": "bulk s1 from h slots",
+        "support": "supp(t_D)",
+        "order": "kappa^1",
+        "formula": "2<t_D,(a L_c h)\u2297h\u2297phi>"
+      },
+      {
+        "term": "bulk s1 from phi slot",
+        "support": "supp(t_D)",
+        "order": "kappa^1",
+        "formula": "<t_D,h\u2297h\u2297(a c\u00b7\u2202phi)>"
+      },
+      {
+        "term": "kernel-derivative",
+        "support": "empty under fixed-external-data",
+        "order": "\u2014",
+        "formula": "0 (s t_D=0)"
+      },
+      {
+        "term": "switch-derivative",
+        "support": "empty at seed (no chi_I in F_t)",
+        "order": "\u2014",
+        "formula": "0"
+      },
+      {
+        "term": "EOM terms",
+        "support": "not isolated at classical seed level",
+        "order": "\u2014",
+        "formula": "not claimed cancelled"
+      }
+    ],
+    "negative_controls": {
+      "omit_h_variation": "would drop 2<t_D,R0(c)\u2297h\u2297phi> \u2014 incorrect",
+      "wrong_a": "a\u22601/2 rescales s1 terms \u2014 rejected by normalization gate",
+      "unjustified_s_tD": "assigning s t_D\u22600 without contract revision \u2014 rejected",
+      "omit_phi_slot_s1": "drops scalar contribution to s1 F_t \u2014 incorrect for Option B"
+    },
+    "conclusion": "s0 F_t is generally nonzero. Therefore Q_0 F_t \u2260 0 (up to the sign convention Q F=(S,F) giving \u00b1sF on antifield-free F). Bare seed is not free-closed."
+  }
+}

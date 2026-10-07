@@ -1,0 +1,53 @@
+{
+  "revision": "r12",
+  "pass": true,
+  "massless_theorem": "conditional_on_inherited_identities",
+  "route_A": "discharged",
+  "route_B": "not_claimed_discharged",
+  "arbitrary_prescribed_m_gt_0": "unresolved",
+  "small_mass": {
+    "status": "certified",
+    "advertised_interval": "0 <= m < 1.3715e-4",
+    "C_hi": "17842.202596755819241",
+    "C_hi_le_17843": true,
+    "exact_rational_C_m2_lt_W": true
+  },
+  "XVI-M_sha256": "41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea",
+  "pdf_pages": 188,
+  "pdf_sha256_external": "7c6daa395fbdbd503e85fa6f789eed8a0ee73ea3653702c1e5b3581eb81ef864",
+  "regression": {
+    "math_passed": 44,
+    "math_failed": 0,
+    "pack_passed": 37,
+    "pack_failed": 0,
+    "log": "build/logs/07_regression.txt"
+  },
+  "output_root": "build/outputs",
+  "interpreter": "sys.executable",
+  "reference_outputs": "immutable_during_pipeline",
+  "completion_contract": "H4_insertion_class_I_t",
+  "blockers_fixed": [
+    "completion_contract_H4",
+    "no_prep_fabricate",
+    "required_script_precheck",
+    "classical_bv_strict_schema",
+    "free_hessian_build_outputs_only",
+    "post_run_code_cert_audit",
+    "prepdf_then_external_manifest",
+    "immutable_reference_outputs",
+    "K1_source_sup_norm_wording"
+  ],
+  "reloc_repro": {
+    "path": "/tmp/XVI-N-r12-reloc",
+    "unrelated_cwd": "/tmp/XVI-N-r12-unrelated-cwd",
+    "regen1_vs_reference": "PASS",
+    "regen2_vs_reference": "PASS",
+    "regen1_vs_regen2": "PASS",
+    "logs": [
+      "build/logs/reloc_repro.log",
+      "build/logs/reloc_regen1.txt",
+      "build/logs/reloc_regen2.txt",
+      "build/logs/reloc_missing_script.txt"
+    ]
+  }
+}

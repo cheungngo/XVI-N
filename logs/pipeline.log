@@ -1,0 +1,119 @@
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/tests/test_stub_path_absence.py  (cwd=/workspace/XVI-N-r10)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/tests/test_convention_consistency.py  (cwd=/workspace/XVI-N-r10)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/tests/test_schema_failure.py  (cwd=/workspace/XVI-N-r10)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/tests/test_repro_and_failure.py --unit  (cwd=/workspace/XVI-N-r10)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/conventions/source_of_truth.py  (cwd=/workspace/XVI-N-r10/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/conventions/check_ms_coefficients.py  (cwd=/workspace/XVI-N-r10/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/brst_normalization.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (4.5s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/qd2_antifield_test.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (13.5s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/qd2_general_jets.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (27.8s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/extended_action_master.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/classical_bv_check.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (4.7s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/generator_antibracket_test.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/field_only_projection_check.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (8.8s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/classical_bv/s_psi_coefficients.py  (cwd=/workspace/XVI-N-r10/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/normalization/free_hessian_check.py  (cwd=/workspace/XVI-N-r10/code/normalization)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/prep/prepared_noether_af0.py  (cwd=/workspace/XVI-N-r10/code/prep)
+OK (60.9s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/prep/independent_weighted_euler.py  (cwd=/workspace/XVI-N-r10/code/prep)
+OK (23.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/prep/prepared_gauge_variation.py  (cwd=/workspace/XVI-N-r10/code/prep)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/export_nins12_contracts.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/root_adjoint_H.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (3.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/root_adjoint_Ddiv_Dgf_check.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (3.2s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_4D_special_family_analytic.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (532.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_1p1_corrected.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (156.1s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_support_lemma_check.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (1.8s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/onshell_admission_check.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.6s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/onshell_structural_check.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/parity_control_symmetric.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (6.8s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_4D_kirchhoff_corrected.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (2.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/insertion_variation.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_4D_validated_enclosure.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_small_mass_bound.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (29.3s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/insertion/nins3_status_composer.py  (cwd=/workspace/XVI-N-r10/code/insertion)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /workspace/XVI-N-r10/code/regression_N.py  (cwd=/workspace/XVI-N-r10/code)
+OK (90.9s)
+post-run code/ cert audit: PASS (none found)
+archived stale RELEASE_MANIFEST.txt -> RELEASE_MANIFEST.txt.r11-or-earlier.20261007-042408.historical
+wrote pre-PDF provenance RELEASE_MANIFEST_PREPDF.txt
+listings OK (139 files)
+$ pdflatex -interaction=nonstopmode XVI-N.tex  (cwd=/workspace/XVI-N-r10/manuscript)
+OK (8.0s)
+$ pdflatex -interaction=nonstopmode XVI-N.tex  (cwd=/workspace/XVI-N-r10/manuscript)
+OK (8.2s)
+RELEASE_STATUS.json written
+{
+  "revision": "r12",
+  "pass": true,
+  "massless_theorem": "conditional_on_inherited_identities",
+  "route_A": "discharged",
+  "route_B": "not_claimed_discharged",
+  "arbitrary_prescribed_m_gt_0": "unresolved",
+  "small_mass": {
+    "status": "certified",
+    "advertised_interval": "0 <= m < 1.3715e-4",
+    "C_hi": "17842.202596755819241",
+    "C_hi_le_17843": true,
+    "exact_rational_C_m2_lt_W": true
+  },
+  "XVI-M_sha256": "41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea",
+  "pdf_pages": 188,
+  "pdf_sha256_external": "7c6daa395fbdbd503e85fa6f789eed8a0ee73ea3653702c1e5b3581eb81ef864",
+  "regression": {
+    "math_passed": 44,
+    "math_failed": 0,
+    "pack_passed": 37,
+    "pack_failed": 0,
+    "log": "build/logs/07_regression.txt"
+  },
+  "output_root": "build/outputs",
+  "interpreter": "sys.executable",
+  "reference_outputs": "immutable_during_pipeline",
+  "completion_contract": "H4_insertion_class_I_t",
+  "blockers_fixed": [
+    "completion_contract_H4",
+    "no_prep_fabricate",
+    "required_script_precheck",
+    "classical_bv_strict_schema",
+    "free_hessian_build_outputs_only",
+    "post_run_code_cert_audit",
+    "prepdf_then_external_manifest",
+    "immutable_reference_outputs",
+    "K1_source_sup_norm_wording"
+  ]
+}
+update-reference: copied /workspace/XVI-N-r10/build/outputs -> /workspace/XVI-N-r10/reference_outputs
+update-reference: 36 json files
+verify vs reference_outputs: PASS
+verify vs reference_outputs: PASS

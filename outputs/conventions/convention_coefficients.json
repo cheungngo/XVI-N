@@ -1,0 +1,72 @@
+{
+  "couplings": {
+    "h_star_sh": "+1",
+    "phi_star_sphi": "+1",
+    "c_star_sc": "-1",
+    "cbar_star_scbar": "-1"
+  },
+  "expanded": {
+    "h_star_R0": "+1",
+    "h_star_L": "+kappa*1/2",
+    "phi_star": "+kappa*1/2",
+    "c_star_cc": "-kappa*1/2",
+    "cbar_star_b": "-i"
+  },
+  "vertices": [
+    {
+      "id": "V2_grav",
+      "order": "kappa^0",
+      "fields": "hh",
+      "factor": "K=-\\square\\mathcal P"
+    },
+    {
+      "id": "V2_ghost",
+      "order": "kappa^0",
+      "fields": "\\bar c c",
+      "factor": "i\\square"
+    },
+    {
+      "id": "V3_grav_prep",
+      "order": "kappa^1",
+      "fields": "hhh",
+      "factor": "\\kappa\\sigma_\\varepsilon\\ell_3"
+    },
+    {
+      "id": "V3_cbar_c_h",
+      "order": "kappa^1",
+      "fields": "\\bar c c h",
+      "factor": "\\kappa\\cdot 2ia"
+    },
+    {
+      "id": "V_af_h",
+      "order": "kappa^{0,1}",
+      "fields": "h^*c(+h)",
+      "factor": "h^*(R_0(c)+\\kappa a\\mathcal L_c h)"
+    },
+    {
+      "id": "V_af_c",
+      "order": "kappa^1",
+      "fields": "c^*cc",
+      "factor": "-\\kappa a\\,c^*(c\\cdot\\partial c)"
+    },
+    {
+      "id": "V_af_cbar",
+      "order": "kappa^0",
+      "fields": "\\bar c^*b",
+      "factor": "-i\\,\\bar c^*b"
+    }
+  ],
+  "master_sign": {
+    "delta_xi_S": "-kappa int xi B",
+    "xi": "a c = c/2",
+    "SS_Phi_star_0": "2 s S_field",
+    "SS_equals": "-kappa int c B",
+    "SD_SD": "kappa int c (B_g - B) + O(kappa^2)",
+    "Bg_location": "prepared/switched breaking"
+  },
+  "antifield_transform": "s Phi*_A = (S, Phi*_A)",
+  "a": "1/2",
+  "latex_saf": "\\begin{equation}\n\\label{eq:Saf}\n\\boxed{S_{\\mathrm{af}}\n=\\int\\bigl(h^{*\\mu\\nu}(sh)_{\\mu\\nu}+\\phi^*(s\\phi)\n-c^*_\\mu(sc^\\mu)-\\bar c^{*\\mu}(s\\bar c_\\mu)\\bigr).}\n\\end{equation}",
+  "latex_expanded": "\\begin{align}\n\\label{eq:Saf-expanded}\nS_{\\mathrm{af}}\n&=\\int h^{*\\mu\\nu}\\bigl(R_0(c)_{\\mu\\nu}+\\kappa a(\\mathcal L_ch)_{\\mu\\nu}\\bigr)\n+\\kappa a\\int\\phi^*(c^\\rho\\partial_\\rho\\phi)\n\\nonumber\\\\\n&\\quad\n-\\kappa a\\int c^*_\\mu\\,(c^\\rho\\partial_\\rho c^\\mu)\n-i\\int\\bar c^{*\\mu}b_\\mu.\n\\end{align}",
+  "latex_vertices": "\\begin{center}\\begin{tabular}{llll}\nID & Order & Fields & Factor / density \\\\\n\\midrule\n$V2_grav$ & $kappa^0$ & $hh$ & $K=-\\square\\mathcal P$ \\\\\n$V2_ghost$ & $kappa^0$ & $\\bar c c$ & $i\\square$ \\\\\n$V3_grav_prep$ & $kappa^1$ & $hhh$ & $\\kappa\\sigma_\\varepsilon\\ell_3$ \\\\\n$V3_cbar_c_h$ & $kappa^1$ & $\\bar c c h$ & $\\kappa\\cdot 2ia$ \\\\\n$V_af_h$ & $kappa^{0,1}$ & $h^*c(+h)$ & $h^*(R_0(c)+\\kappa a\\mathcal L_c h)$ \\\\\n$V_af_c$ & $kappa^1$ & $c^*cc$ & $-\\kappa a\\,c^*(c\\cdot\\partial c)$ \\\\\n$V_af_cbar$ & $kappa^0$ & $\\bar c^*b$ & $-i\\,\\bar c^*b$ \\\\\n\\end{tabular}\\end{center}"
+}

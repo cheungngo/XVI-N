@@ -1,0 +1,13 @@
+{
+  "revision": "r12",
+  "ansatz": "regular, seed-preserving, antifield-linear insertion completion I_t = F_t + A_0 + kappa A_1 in the Gate N-Ins kernel class, with A_0 = int(h^{*mu nu} U_{mu nu} + phi* V + c*_mu W^mu), gh(U,V,W)=(1,1,2), and seed I_t|_{c=cbar=b=Phi*=0} = F_t",
+  "A_0": "int(h* U + phi* V + c* W)",
+  "ghost_numbers_UVW": {
+    "U": 1,
+    "V": 1,
+    "W": 2
+  },
+  "seed": "I_t|_{c=cbar=b=Phi*=0}=F_t",
+  "pass": true,
+  "pass_means": "contract text agrees with H4 / Lemma P0Q0A0 / Thm massless hypotheses; does not claim universal N-Ins.4 completion"
+}

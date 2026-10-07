@@ -1,0 +1,27 @@
+{
+  "gate": "root_adjoint_H",
+  "pass": true,
+  "A_definition": "A = -Box P - 2 D_gf^* D_gf = -Box P - 2 P D_div^* D_div P (= 2 G_lin; P^2=Id)",
+  "a_root": "a_root = -E^A(P alpha) (vartheta=1)",
+  "H_formula": "H = A a_root = alpha + 2 P D_div^* E^A(D_div alpha)",
+  "H_on_U_if_alpha_U_zero": "H|_U = 2 P D_div^* w,  w = E^A(D_div alpha)  (constant-coefficient D_div commutes with E^A on compact data)",
+  "superseded_r7_formula": "H = alpha + 2 D*(D E^A P alpha) with w_old = E^A(D_div P alpha): WRONG for traceful alpha (differs by a trace gradient)",
+  "D_definition": "D_div T = d_mu T^{mu nu};  D_gf r = D_div P r;  D_div^* v = -d^(mu v^nu);  D_gf^* = P D_div^*",
+  "D_div_alpha_U_identically_zero_generic": false,
+  "alpha_U_identically_zero_generic": false,
+  "DP_alpha_U_identically_zero_generic_superseded": false,
+  "DP_alpha_U_sample": [
+    "m2*phi(t, x, y, z)*Derivative(vf(t, x, y, z), t)/2 + m2*vf(t, x, y, z)*Derivative(phi(t, x, y, z), t)/2 + Derivative(E00(t, x, y, z), (t, 2)) - Derivative(E00(t, x, y, z), (x, 2))/2 - Derivative(E00(t",
+    "-m2*phi(t, x, y, z)*Derivative(vf(t, x, y, z), x)/2 - m2*vf(t, x, y, z)*Derivative(phi(t, x, y, z), x)/2 - Derivative(E01(t, x, y, z), (t, 2))/2 + Derivative(E01(t, x, y, z), (x, 2)) + Derivative(E01(",
+    "-m2*phi(t, x, y, z)*Derivative(vf(t, x, y, z), y)/2 - m2*vf(t, x, y, z)*Derivative(phi(t, x, y, z), y)/2 - Derivative(E02(t, x, y, z), (t, 2))/2 + Derivative(E02(t, x, y, z), (x, 2))/2 + Derivative(E0",
+    "-m2*phi(t, x, y, z)*Derivative(vf(t, x, y, z), z)/2 - m2*vf(t, x, y, z)*Derivative(phi(t, x, y, z), z)/2 - Derivative(E03(t, x, y, z), (t, 2))/2 + Derivative(E03(t, x, y, z), (x, 2))/2 + Derivative(E0"
+  ],
+  "special_m0_E0_equals_vf_dphi": {
+    "alpha_zero": false,
+    "note": "If E0^A(f \u2202_\u03bc \u03c6)=v_f \u2202_\u03bc \u03c6 (e.g. const \u2207\u03c6 and E0=Em), residual alpha|_U \u221d fraktur* v_f * Hess(\u03c6); vanishes for linear \u03c6"
+  },
+  "verdict": "Generic: alpha|_U not identically 0 (co uses E0(f\u2202\u03c6), sc uses v_f=Em f; different Greens / Hess residues). D(P alpha)|_U not identically 0 as symbolic identity in independent (vf,phi,E0). Therefore H|_U = alpha|_U + 2 P D_div^* E^A(D_div alpha) is not proved to vanish universally from g=1 alone. Universal vanishing of s0 F_t on admissible data: NOT PROVED. GENERAL family: no plateau vanishing and no ramp-only support claim. SPECIAL family (m=0, phi=x, E(f dphi)=(dphi)v_f, sigma=1): see nins3_4D_special_family_analytic.py.",
+  "causal_plateau_separate": "XII-D prop:causal-plateau (g=1 on nbhd of J^-(K)\u2229supp(K\u03c1_\u03be)) is an EXTRA assumption, kept separate from basic g=1 on U.",
+  "IBP_hypothesis": "xi compactly supported in U => IBP of <H, L_xi h> has no boundary terms",
+  "sigma_on_U": "sigma=1 on U justifies dropping D_sigma in the pairing (supp L_xi h \u2282 U), not globally"
+}

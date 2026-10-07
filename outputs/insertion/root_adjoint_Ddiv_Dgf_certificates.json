@@ -1,0 +1,60 @@
+{
+  "gate": "root_adjoint_Ddiv_Dgf_check",
+  "conventions": {
+    "pairing": "<T,S>=int T^{mu nu} S_{mu nu}; <v,u>=int v^nu u_nu; indices moved with eta=diag(1,-1,-1,-1)",
+    "P": "(P T)^{mu nu}=T^{mu nu}-1/2 eta^{mu nu} tr_eta T, P^2=1, P self-adjoint",
+    "D_div": "(D_div T)^nu = d_mu T^{mu nu}",
+    "D_gf": "D_gf r = D_div P r",
+    "symmetrization": "parentheses include 1/2",
+    "G_lin": "XI-A eq:Glin as displayed in XVI-N (trace-reversed form)"
+  },
+  "1_D_div_adjoint": true,
+  "2_D_gf_adjoint_equals_P_Ddiv_star": true,
+  "2b_control_Ddiv_star_not_adjoint_of_Dgf": true,
+  "3a_A_eq_minusBoxP_minus_2Dgfstar_Dgf": true,
+  "3b_A_eq_minusBoxP_minus_2P_Ddivstar_Ddiv_P": true,
+  "3c_control_noP_variant_differs": true,
+  "3d_Bianchi_D_div_A_zero": true,
+  "4a_encoding_Box_wcorr_eq_Ddiv_alpha": true,
+  "4b_encoding_Box_wold_eq_Ddiv_Palpha": true,
+  "4c_H_direct_eq_H_reduced_generic_traceful": true,
+  "4d_H_direct_ne_H_old_generic_traceful": true,
+  "4d_H_old_defect_componentwise": {
+    "00": "(Derivative(b00(t, x, y, z), (t, 2)) + Derivative(b00(t, x, y, z), (x, 2)) + Derivative(b00(t, x, y, z), (y, 2)) + Derivative(b00(t, x, y, z), (z, 2)) - Derivative(b11(t, x, y, z), (t, 2)) - Derivative(b11(t, x, y, z), (x, 2)) - Derivative(b11(t, x, y, z), (y, 2)) - Derivative(b11(t, x, y, z), (z, 2)) - Derivative(b22(t, x, y, z), (t, 2)) - Derivative(b22(t, x, y, z), (x, 2)) - Derivative(b22(t, x, y, z), (y, 2)) - Derivative(b22(t, x, y, z), (z, 2)) - Derivative(b33(t, x, y, z), (t, 2)) - Derivative(b33(t, x, y, z), (x, 2)) - Derivative(b33(t, x, y, z), (y, 2)) - Derivative(b33(t, x, y, z), (z, 2)))/2",
+    "01": "-Derivative(b00(t, x, y, z), t, x) + Derivative(b11(t, x, y, z), t, x) + Derivative(b22(t, x, y, z), t, x) + Derivative(b33(t, x, y, z), t, x)",
+    "02": "-Derivative(b00(t, x, y, z), t, y) + Derivative(b11(t, x, y, z), t, y) + Derivative(b22(t, x, y, z), t, y) + Derivative(b33(t, x, y, z), t, y)",
+    "03": "-Derivative(b00(t, x, y, z), t, z) + Derivative(b11(t, x, y, z), t, z) + Derivative(b22(t, x, y, z), t, z) + Derivative(b33(t, x, y, z), t, z)",
+    "11": "(Derivative(b00(t, x, y, z), (t, 2)) + Derivative(b00(t, x, y, z), (x, 2)) - Derivative(b00(t, x, y, z), (y, 2)) - Derivative(b00(t, x, y, z), (z, 2)) - Derivative(b11(t, x, y, z), (t, 2)) - Derivative(b11(t, x, y, z), (x, 2)) + Derivative(b11(t, x, y, z), (y, 2)) + Derivative(b11(t, x, y, z), (z, 2)) - Derivative(b22(t, x, y, z), (t, 2)) - Derivative(b22(t, x, y, z), (x, 2)) + Derivative(b22(t, x, y, z), (y, 2)) + Derivative(b22(t, x, y, z), (z, 2)) - Derivative(b33(t, x, y, z), (t, 2)) - Derivative(b33(t, x, y, z), (x, 2)) + Derivative(b33(t, x, y, z), (y, 2)) + Derivative(b33(t, x, y, z), (z, 2)))/2",
+    "12": "Derivative(b00(t, x, y, z), x, y) - Derivative(b11(t, x, y, z), x, y) - Derivative(b22(t, x, y, z), x, y) - Derivative(b33(t, x, y, z), x, y)",
+    "13": "Derivative(b00(t, x, y, z), x, z) - Derivative(b11(t, x, y, z), x, z) - Derivative(b22(t, x, y, z), x, z) - Derivative(b33(t, x, y, z), x, z)",
+    "22": "(Derivative(b00(t, x, y, z), (t, 2)) - Derivative(b00(t, x, y, z), (x, 2)) + Derivative(b00(t, x, y, z), (y, 2)) - Derivative(b00(t, x, y, z), (z, 2)) - Derivative(b11(t, x, y, z), (t, 2)) + Derivative(b11(t, x, y, z), (x, 2)) - Derivative(b11(t, x, y, z), (y, 2)) + Derivative(b11(t, x, y, z), (z, 2)) - Derivative(b22(t, x, y, z), (t, 2)) + Derivative(b22(t, x, y, z), (x, 2)) - Derivative(b22(t, x, y, z), (y, 2)) + Derivative(b22(t, x, y, z), (z, 2)) - Derivative(b33(t, x, y, z), (t, 2)) + Derivative(b33(t, x, y, z), (x, 2)) - Derivative(b33(t, x, y, z), (y, 2)) + Derivative(b33(t, x, y, z), (z, 2)))/2",
+    "23": "Derivative(b00(t, x, y, z), y, z) - Derivative(b11(t, x, y, z), y, z) - Derivative(b22(t, x, y, z), y, z) - Derivative(b33(t, x, y, z), y, z)",
+    "33": "(Derivative(b00(t, x, y, z), (t, 2)) - Derivative(b00(t, x, y, z), (x, 2)) - Derivative(b00(t, x, y, z), (y, 2)) + Derivative(b00(t, x, y, z), (z, 2)) - Derivative(b11(t, x, y, z), (t, 2)) + Derivative(b11(t, x, y, z), (x, 2)) + Derivative(b11(t, x, y, z), (y, 2)) - Derivative(b11(t, x, y, z), (z, 2)) - Derivative(b22(t, x, y, z), (t, 2)) + Derivative(b22(t, x, y, z), (x, 2)) + Derivative(b22(t, x, y, z), (y, 2)) - Derivative(b22(t, x, y, z), (z, 2)) - Derivative(b33(t, x, y, z), (t, 2)) + Derivative(b33(t, x, y, z), (x, 2)) + Derivative(b33(t, x, y, z), (y, 2)) - Derivative(b33(t, x, y, z), (z, 2)))/2"
+  },
+  "4e_trace_free_control_H_old_matches": true,
+  "4f_trace_free_H_reduced_matches": true,
+  "4g_w_corr_minus_w_old_eq_minus_half_grad_trace": true,
+  "5_polynomial_cases": {
+    "pure_trace": {
+      "trace": "4*t**2*x + 4*t*x*y - 12*y*z**2 + 4*z**3",
+      "H_direct_eq_H_reduced": true,
+      "H_direct_eq_H_old": false
+    },
+    "traceful_mixed": {
+      "trace": "t**3 - t*y*z + t*z - x**2*z + x*y - y**3",
+      "H_direct_eq_H_reduced": true,
+      "H_direct_eq_H_old": false
+    },
+    "trace_free": {
+      "trace": "0",
+      "H_direct_eq_H_reduced": true,
+      "H_direct_eq_H_old": true
+    }
+  },
+  "6_EA_commutes_with_d_on_plateau_patch": true,
+  "6_n_cases": 24,
+  "6_domain": "Advanced Kirchhoff cone integral E^A j(t,x)=int_0^inf R <j(t+R,x+Rn)>_{S^2} dR for sources j=S^{(k)}(t')P(t',x'), S in C_c^inf with supp S in the future of the patch; E^A is convolution with a translation-invariant distribution, so it commutes with constant-coefficient derivatives on E'(R^4); verified exactly here.",
+  "5_ok": true,
+  "pass": true,
+  "verdict": "A = -Box P - 2 D_gf^* D_gf = -Box P - 2 P D_div^* D_div P (= 2 G_lin as displayed). For a_root = -E^A P alpha: H = alpha + 2 P D_div^* E^A(D_div alpha); the vector is w = E^A(D_div alpha), NOT E^A(D_div P alpha). The superseded formula agrees only for trace-free alpha; w_corr - w_old = -1/2 grad(E^A tr P alpha)-type gradient."
+}

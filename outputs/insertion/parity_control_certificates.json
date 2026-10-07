@@ -1,0 +1,8 @@
+{
+  "gate": "parity_control_symmetric_bumps",
+  "role": "CONTROL_not_witness",
+  "pass": true,
+  "I0": "0",
+  "expected_zero": true,
+  "reason": "Symmetric bumps Ba(v)=v^p(1-v)^p are even about v=1/2; odd-parity factors in the (g-1) alpha:r density integrate to 0. Not an obstruction witness; documents why symmetric data give s0Ft=0."
+}

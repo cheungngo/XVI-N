@@ -1,0 +1,271 @@
+{
+  "target": "PreparedClassicalBVInterfaceThroughOrderKappa",
+  "three_objects": {
+    "i_unprepared_BV": "CME when sigma\u22611",
+    "ii_nilpotent_s": "s=s0+kappa s1 on fields/ghosts; s^2=0 verified",
+    "iii_prepared_broken": "S_D=S_inv+V_sigma+V_g; (S,S)=kappa int c (B_g-B)+O(kappa^2); Q_D^2\u22600"
+  },
+  "extended_action": {
+    "name": "S_D^{BV,[1]}",
+    "formula_tex": "S_D^{BV,[1]}=S_{\\mathrm{EH}}^{[2]}+S_{\\mathrm{EH}}^{[3]}+\\kappa\\int(\\sigma_\\varepsilon-1)\\ell_3[h]+\\int h^{*\\mu\\nu}\\big(R_0(c)_{\\mu\\nu}+\\kappa a(\\mathcal L_c h)_{\\mu\\nu}\\big)-\\kappa\\int c^*_\\mu\\,(a\\,c^\\rho\\partial_\\rho c^\\mu)-i\\int\\bar c^{*\\mu}b_\\mu",
+    "coefficients": {
+      "a": "1/2",
+      "S_EH^[2]": "Fierz-Pauli / quadratic EH (XI-A S_FP equivalent on shell of linear gauge)",
+      "S_EH^[3]": "kappa * int ell_3  (coefficient of kappa in -(2/kappa^2) int sqrt(-q) R)",
+      "preparation": "kappa int (sigma_eps - 1) ell_3   [XII-C eq:selected-action; w=sigma-1]",
+      "antifield_h": "int h^{* mu nu} s(h)_{mu nu}  with left derivatives; pairing on all 16 components",
+      "antifield_c": "- int c^*_mu (s c^mu)  [odd sign; s c = kappa a c\u00b7\u2202c]",
+      "antifield_cbar": "- int cbar^{* mu} (s cbar_mu) = -i int cbar^{* mu} b_mu",
+      "antifield_b": "absent (s b = 0)",
+      "no_Phi_star_quadratic": "S'_{>=2}=0 at this order"
+    },
+    "scalar_sector": {
+      "XII_C_has_scalar": true,
+      "XII_C_S_D": "S_grav,D + S_g^{sc}",
+      "Phase_I_choice": "Option B: reinstate scalar; retain B_g; S_D=S_inv+V_sigma+V_g",
+      "dropped_terms_in_Noether": [
+        "E_phi partial_nu phi",
+        "B_{g,nu}"
+      ],
+      "retained_pure_metric_breaking": "-w Q_nu(A h) + R_sigma,nu + kappa Q_nu(Z_sigma)",
+      "justification": "Sector contract table specifies pure metric gravity; scalar terms are set to zero by restriction, not by claiming XII-C lacks them. Documented."
+    },
+    "unprepared_vs_prepared": {
+      "unprepared_S_0_BV": "sigma_eps \u2261 1 (w=0, Dsource=0): S_EH^{[2+3]} + antifield terms with nilpotent s; classical master equation (S_0,S_0)=0 (imported naturality of EH + s^2=0)",
+      "prepared_deformation": "add kappa int (sigma_eps-1) ell_3",
+      "broken_identity": "(S_D,S_D)= -kappa int c^nu B_nu + O(kappa^2), B=N0(Z); equiv XIV-A kappa int c K with K=-B+..."
+    },
+    "derivative_convention": "left derivatives on odd variables; antibracket (F,G)=sum (\u03b4F/\u03b4\u03a6 \u03b4G/\u03b4\u03a6* - \u03b4F/\u03b4\u03a6* \u03b4G/\u03b4\u03a6)"
+  },
+  "master_square": {
+    "master_square": "(S_D,S_D)= kappa int c^nu (B_g,nu - B_nu) + O(kappa^2)  [B=N0(Z); convention sheet r3]",
+    "half_square": "(S,S)/2 = B_tot = -(kappa/2) int c^nu B_nu + O(kappa^2)",
+    "af0": {
+      "order": "kappa^1",
+      "expression": "kappa * int c^nu * (B_g,nu - B_nu)   (deg0)",
+      "B_nu^{[1]}_pure_metric": "-w Q_nu(A h) + FrakturR_{sigma_eps, nu}",
+      "w": "sigma_eps - 1",
+      "compare_XII_C": "XII-C eq:changed-noether pure-metric projection N_nu(e_D)=kappa[-w Q_nu(A gamma)+R_sigma,nu]+kappa^2 Q_nu(Z_sigma); the O(kappa) master defect density matches -wQ+R (imported theorem + connecting derivation)",
+      "O_kappa2_term": "kappa^2 Q_nu(Z_sigma) retained in XII-C; present in (S,S) at O(kappa^2)",
+      "dropped_scalar": "NONE under Option B; E_phi d phi cancels; B_g retained in (S_D,S_D)",
+      "verification": {
+        "imported_theorem": "XII-C thm:noether",
+        "connecting_derivation": "s S_field = delta_{xi=a c} S_field with xi=a c; antibracket identity (S,S)|_af0 = 2 s S_field (linear antifield truncation); matches XIV-A thm:breaking form kappa int c^nu K_nu",
+        "direct_general_jet_Euler_of_ell3": "Constructed \u2014 unrestricted rational 3-jets + deg-4 poly family; Methods 1+2 PASS (prep/af0_noether_certificates.json)",
+        "piece_checks_constructed": [
+          "N0(A)=0 on unrestricted 3-jets",
+          "N0(J3)+Q(A)=0 on unrestricted 3-jets",
+          "product-rule IBP for A, J3, Ew",
+          "naturality sigma=1; bulk -wQ; negative drop -wQ; const-w B=-wQ"
+        ],
+        "status": "Constructed (both methods on unrestricted retained jets)",
+        "af0_certificate": {
+          "gate": "af0_prepared_Noether",
+          "pass": true,
+          "elapsed_sec": 59.32280445098877,
+          "jet_order": "unrestricted rational 3-jets (h,\u2202h,\u2202\u2202h,\u2202\u2202\u2202h independent) \u2014 covers O(\u03ba) EH cubic densities needing \u22643 derivatives; plus degree-4 sparse polynomial families at random rational basepoints (retained-jet order 3 unrestricted + poly locus order 4)",
+          "method2": "N0(A)=0; N0(J3)+Q(A)=0; B=N0(Z) with Z=w J3+Dsource; const-w B=-w Q(A)",
+          "method1": "product-rule IBP densities for A, J3, Ew=sigma J3+Ds (Euler-of-divergence=0)",
+          "XII_C_match": "B_nu = -w Q_nu(A h) + R_sigma,nu with R_sigma = B + w Q(A); delta_xi S = \u222b \u03be^\u03bd (-\u03ba B_\u03bd) + O(\u03ba\u00b2); no sign/factor discrepancy observed vs XII-C",
+          "discrepancy_with_XII_C": null,
+          "numeric_stats": {
+            "trials": 20,
+            "N0A": 20,
+            "lem": 20,
+            "prA": 20,
+            "prJ": 20,
+            "prW": 20,
+            "nat": 20,
+            "bulk": 19,
+            "neg": 19,
+            "B_eq_bulk_plus_R": 0,
+            "sample_B": [
+              "-255/2",
+              "151/12",
+              "2189/18",
+              "-615/2"
+            ]
+          },
+          "numeric_failures_head": [],
+          "poly_stats": {
+            "seeds": 3,
+            "points": 6,
+            "ok_points": 6,
+            "n_failures": 0
+          },
+          "method2_spot": {
+            "lem": true,
+            "const_w_B_eq_minus_wQ": true,
+            "w": "1/2"
+          },
+          "controls": {
+            "naturality_sigma1": true,
+            "bulk_minus_wQ_nonzero": true,
+            "negative_drop_wQ": true,
+            "const_w_neq1": true
+          }
+        },
+        "XII_C_discrepancy": null
+      }
+    },
+    "af1": {
+      "order": "kappa^1 (and all orders for s^2)",
+      "expression": "int h^* (s^2 h) + c^* (s^2 c) + ...",
+      "vanishes_iff": "s^2 = 0 on fields",
+      "verification": "brst_normalization unrestricted 2-jet samples PASS; free s0^2 exact",
+      "status": "Constructed (vanishes)"
+    },
+    "af_ge2": {
+      "expression": "0 at linear-antifield truncation S'_{>=2}=0",
+      "status": "Constructed (absent by truncation)"
+    },
+    "unprepared_CME": {
+      "statement": "(S_0^{BV}, S_0^{BV})=0 when sigma_eps\u22611",
+      "status": "Constructed (naturality of unprepared EH + s^2=0; plateau relative CME as in XIV-A)",
+      "evidence": "imported naturality + written connection; not a new EH variation computation"
+    }
+  },
+  "Q_D_squared": {
+    "definition": "Q_D F := (S_D, F)",
+    "jacobi": "Q_D^2 F = ((S,S), F)/2 = (B, F)",
+    "B": "(S,S) = -kappa int c^nu B_nu + O(kappa^2); B_tot=(S,S)/2",
+    "explicit_nonzero": {
+      "config": "w=constant\u22600, h=psi(t)*eta, c^0=theta\u22600, sigma'=0",
+      "B_0": "6*w*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))",
+      "B_0_specialized": "6*w*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))",
+      "(S,S)_density": "kappa * c^0 * B_0 = kappa theta * 6 w psi' psi''",
+      "nonzero_when": "w\u22600, theta\u22600, psi' psi''\u22600",
+      "Q_D^2_F": "((S,S), F)/2 = (B, F) \u2260 0 for F with nonzero antibracket against B",
+      "conclusion": "B nonzero on generic jets when w!=0; prepared theory is NOT the zero derivation / not a BV complex"
+    },
+    "status": "Constructed (nonzero certificate)",
+    "general_jets": {
+      "gate": "Q_D^2_general_jets",
+      "pass": true,
+      "formula": {
+        "general": "Q_D^2 F = (B_tot, F) with B_tot = (S,S)/2",
+        "at_O_kappa": "B_tot = (kappa/2) int c^nu B_nu + O(kappa^2)  [or without 1/2 per XIV-A reporting of (S,S)]",
+        "B_nu": "B_nu = N0_nu(Z) = -w Q_nu(A h) + R_sigma,nu,  Z = w J3 + Dsource",
+        "nonzero": "prepared theory is not a BV complex whenever B != 0"
+      },
+      "jet_order": "unrestricted rational 3-jets for B_nu; structural antibracket identity",
+      "stats": {
+        "trials": 12,
+        "B_eq_minus_wQ_plus_R": 12,
+        "nonzero_B": 12,
+        "nat_B0": 12,
+        "af_action_cstar": 12
+      },
+      "samples": [
+        {
+          "B": [
+            "-255/2",
+            "151/12",
+            "2189/18",
+            "-615/2"
+          ],
+          "w": "1"
+        },
+        {
+          "B": [
+            "7087/36",
+            "8507/36",
+            "-631/12",
+            "-331/6"
+          ],
+          "w": "1/2"
+        }
+      ],
+      "spot_vs_general": "supersedes single pure-trace spot config; holds on random unrestricted jets"
+    }
+  },
+  "gauge_fixing": {
+    "sequence": [
+      "S_D^{BV}",
+      "S_{D,Psi}^{BV} = S_D^{BV} + s Psi  (Psi added once)",
+      "S_{D,Psi}|_{Phi^*=0}  (set antifields to zero after)"
+    ],
+    "Psi": "-i int cbar_mu (2 D^mu[h] - b^mu) d^4x",
+    "s0_Psi": "int (2 b_mu D^mu h - b_mu b^mu + i cbar_mu Box c^mu)  [XI-B; from s0 h = R_0(c), D(R_0 c)=1/2 Box c with our a]",
+    "ghost_kinetic_coefficient": {
+      "from_s0": "i int cbar_mu Box c^mu after eliminating b (XI-B prop:fermion)",
+      "note": "Matches XI-B with R_0(c)=partial_(mu c_nu); D(R_0 c)^nu = (1/2) Box c^nu"
+    },
+    "eliminate_b": "b = D h => bosonic gf term int D_mu D^mu = XI-A S_gf",
+    "s1_contribution_to_s_Psi": {
+      "source": "s1 h = a L_c h enters D[s1 h] in s(cbar * 2 D[h])",
+      "O_kappa_ghost_graviton_vertex": "2 i int cbar_mu D^mu[s1 h] = 2 i a int cbar_mu D^mu (L_c h) (plus possible D acting on a only through h)",
+      "displayed_density": "i a cbar_mu partial_alpha (P L_c h)^{alpha mu} * 2  [schematic; D=div P]",
+      "status": "Constructed as functional of (cbar, c, h) from s1 h; component table in gauge_fixed_vertex_table.json"
+    },
+    "negative_control_double_Psi": "Adding Psi twice would double S_gf \u2014 forbidden; regression asserts Psi once",
+    "graviton_cubic_vertex": {
+      "unprepared": "kappa int ell_3 from S_EH^[3]",
+      "prepared": "kappa int sigma_eps ell_3  (= EH cubic + kappa int (sigma-1) ell_3)",
+      "status": "Specified as functional (XII-C eq:ell3); not expanded componentwise here"
+    }
+  },
+  "vertex_table": {
+    "a": "1/2",
+    "vertices": [
+      {
+        "id": "V2_grav",
+        "order": "kappa^0",
+        "fields": "h h",
+        "operator": "K=-Box P",
+        "factor": "1",
+        "source": "S_FP+S_gf"
+      },
+      {
+        "id": "V2_ghost",
+        "order": "kappa^0",
+        "fields": "cbar c",
+        "operator": "i Box",
+        "factor": "i",
+        "source": "s0 Psi after elim b"
+      },
+      {
+        "id": "V3_grav_prep",
+        "order": "kappa^1",
+        "fields": "h h h",
+        "density": "sigma_eps * ell_3",
+        "factor": "kappa",
+        "source": "S_grav,D"
+      },
+      {
+        "id": "V3_ghost_grav",
+        "order": "kappa^1",
+        "fields": "cbar c h",
+        "density": "2 i a cbar_mu D^mu(L_c h)",
+        "factor": "kappa * 2 i a",
+        "source": "s1 in s Psi"
+      },
+      {
+        "id": "V_af_h",
+        "order": "kappa^0 + kappa^1",
+        "fields": "h^* c (+h)",
+        "density": "h^* (R_0(c) + kappa a L_c h)",
+        "factor": "1",
+        "source": "master action"
+      },
+      {
+        "id": "V_af_c",
+        "order": "kappa^1",
+        "fields": "c^* c c",
+        "density": "- c^*_mu (a c^rho partial_rho c^mu)",
+        "factor": "- kappa a",
+        "source": "master action"
+      }
+    ],
+    "graph_vs_action_relation": "Relation between predecessor selected graph vertex V=int chi_I ell_3 and the newly normalized action vertices is NOT YET SETTLED. What is settled: action uses sigma_eps weight; graph uses chi_I; they are distinct external data. What is not: numerical identification of graph normalization with V3_grav_prep after ghost/gauge fixing."
+  },
+  "full_retained_order_broken_master_identity": "Constructed",
+  "reason": "af1 (s^2) Constructed on unrestricted 2-jets; af0 prepared Noether Constructed by Methods 1+2 on unrestricted rational 3-jets + deg-4 poly families (prep/af0_noether_certificates.json); no XII-C sign/factor discrepancy; full retained-order broken master identity Constructed by XII-C thm:noether + convention conversion; sampling is regression corroboration only; N-A Constructed.",
+  "N_A_status": "Constructed",
+  "rewording": "constructs the unprepared classical BV complex and its explicitly broken prepared-action extension through order kappa; full retained-order broken master identity Constructed on unrestricted retained jets",
+  "statuses": {
+    "Prepared_Noether_af0": "Constructed",
+    "full_broken_master": "Constructed",
+    "N_A": "Constructed"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "gate": "N-Prep",
+  "verdict": "PASS",
+  "chosen_route": "C",
+  "routes": {
+    "A": {
+      "name": "Route A \u2014 preparation belongs to the insertion",
+      "preferred_if_provable": true,
+      "predecessor_definitions": {
+        "XII-C_eq:selected-action": "S_grav,D = S_EH + kappa int (sigma-1) ell_3  (ACTION-level cubic weighting)",
+        "XVI-M_graph_vertex": "V(h) = int chi_I ell_3(h) with chi_I independent of sigma_eps (graph insertion switch)",
+        "XVI-M_conventions": "relation of chi_I to action weighting kappa int sigma ell_3 is NOT fixed (Unresolved in XVI-M)"
+      },
+      "verdict": "REFUTED as primary identification",
+      "reason": "XII-C places sigma in the selected gravitational ACTION (cubic-only weight), not merely in a composite insertion. The graph switch chi_I is a separate object (XVI-K/XVI-L/XVI-M). Predecessor definitions do not identify preparation with the insertion.",
+      "proved": false
+    },
+    "B": {
+      "name": "Route B \u2014 external transforming background",
+      "verdict": "NOT ADOPTED for Phase I",
+      "reason": "Would require introducing a transformation law for sigma and an invariant completion, then specializing to the fixed ramp. XII-C already treats sigma as a fixed external weight and computes the resulting classical breaking; constructing a new invariant completion is a different theory than the actual prepared action.",
+      "note": "Declaring the ramp a scalar is not a proof that the existing cubic modification is invariant (plan N.1).",
+      "proved": false
+    },
+    "C": {
+      "name": "Route C \u2014 preparation explicitly breaks gauge symmetry",
+      "verdict": "ADOPTED",
+      "justification": "XII-C Theorem thm:noether (Changed Noether identity) already proves the actual prepared action has a known classical breaking, distinct from any quantum anomaly. Breaking includes: (i) ramp-derivative terms Rampdef_sigma from Dsource; (ii) bulk coefficient mismatch -w Q_nu(A gamma) from weighting only the cubic while leaving the quadratic unweighted; (iii) separate gauge-fixing breaking N(e_gf) when S_gf is included. Relates to XI-A thm:noether B_nu (switching) but is not a relabeling of it.",
+      "classical_breaking_terms": [
+        "kappa (-w Q_nu(A gamma))",
+        "kappa Rampdef_{sigma,nu}",
+        "kappa^2 Q_nu(Z_sigma)",
+        "N_nu(e_gf) if gauge-fixed (XI-A prop:gfbad; linear breaking -Box D^nu)"
+      ],
+      "distinct_from_quantum_anomaly": true,
+      "proved": true,
+      "predecessor_labels": [
+        "XII-C thm:noether / eq:changed-noether",
+        "XII-C thm:actualsource / eq:actualsource",
+        "XII-C eq:Rampdef",
+        "XI-A thm:noether / eq:B (related switching pattern, different object)"
+      ]
+    }
+  },
+  "symbolic_certificates": {
+    "Dsource_vanishes_on_plateau": true,
+    "trace_Dsource_matches_XII_C": true,
+    "trace_Dsource_expr": "-6*psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)",
+    "bulk_mismatch_for_constant_w": true,
+    "bulk_mismatch_expr_const_sigma": "6*c*Derivative(psi(t), t)*Derivative(psi(t), (t, 2)) - 6*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))",
+    "Q0_A_pure_trace": "-6*Derivative(psi(t), t)*Derivative(psi(t), (t, 2))",
+    "plateau_preparation_breaking_vanishes": true,
+    "chi_I": {
+      "in_S_grav_D": false,
+      "in_graph_vertex_V": true,
+      "independence": "chi_I independent of sigma_eps, f, g (XVI-K R hypotheses / XVI-M)",
+      "localized_identity": "switch-derivative terms supported in supp(d chi_I); bulk where chi_I=1 drops them"
+    },
+    "variation_formula": {
+      "order": "O(kappa) cubic, pure metric (no scalar)",
+      "delta_xi_S_EH": "0 (naturality / bulk diffeomorphism invariance)",
+      "delta_xi_kappa_int_w_ell3": "kappa int Z_sigma^{mu nu} (K xi + kappa L_xi gamma)_{mu nu} = -kappa int xi^nu [N_{0,nu}(Z_sigma) + kappa Q_nu(Z_sigma)]",
+      "N0_Z": "N_{0,nu}(Z_sigma) = -w Q_nu(A gamma) + Rampdef_{sigma,nu}",
+      "Z_sigma": "w J_3 + Dsource, Dsource = 2 C_2 dd sigma - 2 M_2 d sigma",
+      "retained_identity": "N_nu(e_D) = kappa [ -w Q_nu(A gamma) + Rampdef_{sigma,nu} ] + O(kappa^2)",
+      "preparation_derivatives_retained": true
+    },
+    "Dsource_00": "-3*psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)",
+    "Dsource_11": "psi(t)*Derivative(psi(t), t)*Derivative(sigma(t), t)"
+  },
+  "relation_to_XI_A_B_nu": {
+    "XI_A_thm_noether": "N_nu(E) = kappa (E_phi d_nu phi - B_nu) with B_nu switching breaking",
+    "XII_C_distinction": "Changed identity is NOT XI-A with relabeled source; adds -w Q_nu(A gamma) bulk mismatch and Rampdef_sigma",
+    "gauge_fixing": "Separate N_nu(e_gf); not made invariant by the ramp"
+  },
+  "interaction_switch": {
+    "chi_I": "independent of preparation; not part of S_grav,D",
+    "localized_identity_support": "supp(d chi_I) for switch-derivative terms; bulk chi_I=1 stated separately"
+  },
+  "stop_rule": "If N-Prep fails, stop before N.2. Here: PASS under Route C."
+}

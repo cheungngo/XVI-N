@@ -1,0 +1,24 @@
+{
+  "a": "1/2",
+  "s": {
+    "s0_h": "R_0(c)=partial_(mu c_nu)",
+    "s1_h": "(1/2) L_c h",
+    "s0_c": "0",
+    "s1_c": "(1/2) c^rho partial_rho c^mu",
+    "s0_cbar": "i b_mu",
+    "s1_cbar": "0",
+    "s0_b": "0",
+    "s1_b": "0"
+  },
+  "R0_pred_note": {
+    "a": "1/2",
+    "S_EH^[2]": "Fierz-Pauli / quadratic EH (XI-A S_FP equivalent on shell of linear gauge)",
+    "S_EH^[3]": "kappa * int ell_3  (coefficient of kappa in -(2/kappa^2) int sqrt(-q) R)",
+    "preparation": "kappa int (sigma_eps - 1) ell_3   [XII-C eq:selected-action; w=sigma-1]",
+    "antifield_h": "int h^{* mu nu} s(h)_{mu nu}  with left derivatives; pairing on all 16 components",
+    "antifield_c": "- int c^*_mu (s c^mu)  [odd sign; s c = kappa a c\u00b7\u2202c]",
+    "antifield_cbar": "- int cbar^{* mu} (s cbar_mu) = -i int cbar^{* mu} b_mu",
+    "antifield_b": "absent (s b = 0)",
+    "no_Phi_star_quadratic": "S'_{>=2}=0 at this order"
+  }
+}

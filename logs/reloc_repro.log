@@ -1,0 +1,9 @@
+reloc root: /tmp/XVI-N-r12-reloc
+unrelated cwd: /tmp/XVI-N-r12-unrelated-cwd
+regen1 vs reference: PASS
+regen2 vs reference: PASS
+regen1 vs regen2: PASS
+missing-script hard-fail: PASS (rc=1)
+fabricated schema hard-fail: PASS (rc=1)
+listing_src dir-rmtree fix: exercised (regen1+2 listings OK)
+timing keys (*seconds*) ignored in scientific compare

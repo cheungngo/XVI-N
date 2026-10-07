@@ -1,0 +1,39 @@
+{
+  "gate": "Q_D^2_general_jets",
+  "pass": true,
+  "formula": {
+    "general": "Q_D^2 F = (B_tot, F) with B_tot = (S,S)/2",
+    "at_O_kappa": "B_tot = (kappa/2) int c^nu B_nu + O(kappa^2)  [or without 1/2 per XIV-A reporting of (S,S)]",
+    "B_nu": "B_nu = N0_nu(Z) = -w Q_nu(A h) + R_sigma,nu,  Z = w J3 + Dsource",
+    "nonzero": "prepared theory is not a BV complex whenever B != 0"
+  },
+  "jet_order": "unrestricted rational 3-jets for B_nu; structural antibracket identity",
+  "stats": {
+    "trials": 12,
+    "B_eq_minus_wQ_plus_R": 12,
+    "nonzero_B": 12,
+    "nat_B0": 12,
+    "af_action_cstar": 12
+  },
+  "samples": [
+    {
+      "B": [
+        "-255/2",
+        "151/12",
+        "2189/18",
+        "-615/2"
+      ],
+      "w": "1"
+    },
+    {
+      "B": [
+        "7087/36",
+        "8507/36",
+        "-631/12",
+        "-331/6"
+      ],
+      "w": "1/2"
+    }
+  ],
+  "spot_vs_general": "supersedes single pure-trace spot config; holds on random unrestricted jets"
+}

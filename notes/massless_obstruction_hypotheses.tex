@@ -1,0 +1,70 @@
+% massless_obstruction_hypotheses.tex  (r9, Track A1)
+% Hypothesis block for the conditional massless obstruction theorem.
+\paragraph{Hypotheses of the conditional massless obstruction.}
+\label{hyp:massless}
+\begin{enumerate}
+\item[\textbf{(H1)}]\label{H:tD}\textbf{Inherited seed.}
+  $t_{\mathrm D}$ is the distribution of XVI-I Proposition~\texttt{prop:test}, eq:push
+  (sha256 \texttt{5c99e57543cbe65134e28810b7de605e8ded2b267e633f069aec834cc534bd80}):
+  \[
+  t_{\mathrm D}
+  =\sum_{|\alpha|+|\beta|\le 2}
+  \partial_1^\alpha\partial_2^\beta\,\iota_*(c_{\alpha\beta}B_{f,g})
+  \in\mathcal E'(M^3),
+  \]
+  with $B_{f,g}$ the compact root of XII-D Theorem~\texttt{thm:root} /
+  Lemma~\texttt{lem:root-kernel}, and $c_{\alpha\beta}$ the source coefficient
+  tensors of XVI-I eq:j-delta. Equivalently XVI-H Theorem~\texttt{thm:trep}.
+  The seed functional is
+  $F_t=\langle t_{\mathrm D},h\otimes h\otimes\phi\rangle=\int a_{\mathrm{root}}:
+  \mathcal J_{\mathrm D}[h]$ with $a_{\mathrm{root}}=a_{f,g}[\phi]$.
+\item[\textbf{(H2)}]\label{H:reduction}\textbf{Reduction identities.}
+  On the invariant free shell $Ah=0$, for $\xi\in\mathfrak g_a$ with
+  $\operatorname{supp}\xi\subset U$ and with the plateau $\sigeps=1$ on $U$
+  (so that $\mathcal D_\sigma$ drops \emph{in this pairing only}):
+  \[
+  s_0F_t
+  =2\int a_{\mathrm{root}}:\mathcal J_{\mathrm D}(\Ro(c),h)
+  =-\langle a_{\mathrm{root}},A\,\mathcal L_\xi h\rangle
+  =\langle\mathcal C,\xi\rangle,
+  \]
+  citing XVI-I eq:s0Ft and XI-E Theorem~\texttt{thm:cubicvar}
+  (the latter re-checked pointwise in this manuscript).
+\item[\textbf{(H3)}]\label{H:config}\textbf{Admitted free configuration space.}
+  The free classical configurations are ambient smooth solutions of
+  $Ah=0$ and $(\square+m^2)\phi=0$ on a neighbourhood of the closed slab,
+  with \emph{no spatial-decay requirement} (XII-D D0:
+  ``Fields are ambient smooth configurations. No spatial decay is required.'';
+  XI-B: ``No spatial decay was imposed on classical configurations.'';
+  XII-C: ``Metric Cauchy data are unrestricted.'').
+  Compact ghosts $\xi\in\mathfrak g_a=C_c^\infty(U;TM)$ are required by the frozen
+  support (XII-D/XI-B). The displayed free solutions $\phi=x^1$ and
+  $h_{12}=p(t-z)$ are therefore admitted by Route~A of
+  Section~\ref{sec:admission}. Route~B (spatially compact Cauchy data) is
+  \textbf{not} claimed discharged in this revision (support defect recorded there).
+\item[\textbf{(H4)}]\label{H:class}\textbf{Completion class.}
+  Regular, seed-preserving, antifield-linear completions
+  $\mathcal I_t=F_t+A_0+\kappa A_1$ in the Gate~N-Ins kernel class, with
+  \[
+  A_0=\int\bigl(h^{*\mu\nu}U_{\mu\nu}+\phi^*V+c^*_\mu W^\mu\bigr),
+  \quad\mathrm{gh}(U,V,W)=(1,1,2),
+  \]
+  and with no new inverse operators beyond those already in the inherited root
+  construction (Gate~N-Ins.1; \texttt{insertion/completion\_space.json}).
+\item[\textbf{(H5)}]\label{H:plateau}\textbf{Plateau and root-cutoff requirements.}
+  $g\in C_c^\infty(M_T;[0,1])$,
+  $\overline U\subset\operatorname{Int}\{g=1\}\cap\{\varepsilon<t<T\}$,
+  $\sigeps(t)=\chi(t/\varepsilon)$ with $\chi=1$ for $s\ge1$ (so $\sigeps=1$ and
+  $\sigeps'=\sigeps''=0$ on $U$). The collar $\vartheta\in C_c^\infty((-\delta,T+\delta))$
+  of XII-D eq:compact-root equals $1$ on a neighbourhood of $[0,T]$.
+  The independent switch $\chi_{\mathrm I}$ of XVI-J/K multiplies interaction densities
+  outside $F_t$ and does not enter $t_{\mathrm D}$. Explicit support bounds for the
+  special-family cutoffs $\beta,\lambda,\kappa_0,\mu$ are those of Lemma~\ref{lem:support}.
+\end{enumerate}
+
+\paragraph{Scope.}
+The theorem of Section~\ref{thm:massless} concerns \textbf{one specified kernel instance}:
+the massless special-family preparation of Proposition~\ref{prop:4Dsf}, with the explicit
+cutoffs of Lemma~\ref{lem:support}. An obstruction for that instance does not automatically
+establish obstruction for every inherited kernel, nor for a fixed $m>0$ instance without
+further work (Track~B).

@@ -1,0 +1,164 @@
+% small_mass_estimate.tex (r11) --- written estimate matching nins3_small_mass_bound.py
+\paragraph{Instance family (frozen geometry; varying $f_m$).}
+\label{par:smallmass-family}
+Keep $h$, $\xi$, $\psi$, $g$, $\sigma$, and the test region $U$ fixed.
+For $m\ge0$ set
+\[
+f_m=(\square+m^2)\psi,\qquad
+\phi_m=x^1\cos\bigl(m(t-5/2)\bigr),\qquad
+v_{f_m}=E_m^{\mathrm A}f_m=\psi.
+\]
+Thus $\psi$ solves the inhomogeneous massive equation with source $f_m$, so the
+predecessor kernel instance (through $f_m$) \emph{varies with mass} while the
+metric / ghost / cutoff data remain frozen. Define
+\[
+Y:=A(\mathcal L_\xi h),\qquad
+W(m):=-\langle a_m,Y\rangle,
+\]
+where $a_m$ is the advanced field built from the special-family source $\alpha_m$
+at mass $m$ (XII-D / Prop.~\ref{prop:4Dsf} at $m=0$).
+
+\paragraph{Exact source decomposition.}
+Write $\delta\phi_m:=\phi_m-x^1$ and
+\[
+\Sigma_\mu
+:=
+f_m\partial_\mu\phi_m-\square(\psi\partial_\mu\phi_m).
+\]
+Compact support of $\psi\partial_\mu\phi_m$ yields
+\[
+E_0^{\mathrm A}(f_m\partial_\mu\phi_m)
+=
+\psi\partial_\mu\phi_m+E_0^{\mathrm A}\Sigma_\mu.
+\]
+On a neighbourhood of the local source support one has $g=1-S$
+(Lemma~\ref{lem:support}: $\kappa_0=\mu=1$ there), and $\sigma=1$ throughout the
+causal region entering the pairing with $Y$ ($t\ge\varepsilon$). Matching XII-D
+$\alpha_{\mathrm{co}}=-\sigma\,\mathfrak a^{\lambda\mu,ab}\partial_\lambda
+E_0^{\mathrm A}(f\partial_\mu\phi)$ (and the script densities), the difference
+admits
+\[
+\alpha_m-\alpha_0
+=
+\delta\alpha_{\mathrm{loc}}+\delta\alpha_{\mathrm{nl}}
+\]
+with
+\begin{align*}
+(\delta\alpha_{\mathrm{loc}})_{ab}
+&=
+-\sum_{\lambda,\mu}
+\mathfrak a^{\lambda\mu}{}_{ab}\,
+\partial_\lambda\bigl(\psi\,\partial_\mu\delta\phi_m\bigr)
++(1-S)\sum_{\mu,\nu}
+\mathfrak a^{\mu\nu}{}_{ab}\,
+(\partial_\mu\psi)\,(\partial_\nu\delta\phi_m)
+-\tfrac{m^2}{2}(1-S)\,\eta_{ab}\,\psi\,\phi_m,
+\\
+(\delta\alpha_{\mathrm{nl}})^{ab}
+&=
+-\sum_{\lambda,\mu}
+\mathfrak a^{\lambda\mu,ab}\,
+\partial_\lambda E_0^{\mathrm A}\Sigma_\mu.
+\end{align*}
+Equivalently, with
+$T_\lambda^{ab}:=(\mathcal P\mathfrak a^{\lambda\mu}\Sigma_\mu)^{ab}$,
+\[
+\mathcal P\delta\alpha_{\mathrm{nl}}
+=
+-\sum_{\lambda}
+\partial_\lambda E_0^{\mathrm A}T_\lambda.
+\]
+(The derivative and overall minus are required: without them the subsequent
+integration by parts would not produce the \emph{positive} double-Green pairing
+recorded below.)
+
+\paragraph{Pairing identity.}
+Integration by parts against the fixed test $Y$ (root-adjoint / XII-D orientation)
+gives
+\[
+W(m)-W(0)
+=
+\langle E_0^{\mathrm A}\mathcal P\delta\alpha_{\mathrm{loc}},Y\rangle
++
+\sum_{\lambda}
+\langle(E_0^{\mathrm A})^2 T_\lambda,\partial_\lambda Y\rangle.
+\]
+(The second sum is the positive double-Green term obtained from
+$\mathcal P\delta\alpha_{\mathrm{nl}}=-\sum_\lambda\partial_\lambda E_0^{\mathrm A}T_\lambda$.)
+
+\paragraph{Cone constants $K_1$, $K_2$.}
+\label{par:cone-K}
+On the causal window used by the certificate, advanced cones from $\overline U$
+meet the time slab $\operatorname{supp}S=[2,3]$ only at spatial radii in
+$[0.726,2.274]$ (Lemma~\ref{lem:support}). Write $\Phi(t)$ for the squared radial
+measure of the $t=\mathrm{const}$ sphere slice of the advanced cone that can meet
+the source slab for the frozen geometry,
+\[
+\Phi(t)
+=
+\tfrac12\Bigl((3.2-t)^2-(1.8-t)^2\Bigr)
+=
+\tfrac12\bigl((32/10-t)^2-(18/10-t)^2\bigr)
+\]
+(when both roots are positive; truncated to the available interval otherwise).
+Evaluating at the earliest contributing time $t_\star=91/100$ in the Kirchhoff
+window gives the cone estimate that bounds the advanced field using the \emph{source supremum norm}, which is then paired against the test field's $L^1$ norm; the resulting rational factor is
+\[
+K_1
+=
+\Phi(91/100)
+=
+\frac{1113}{500}.
+\]
+For the nonlocal channel the double advanced operator requires an extra radial
+integral against the same measure. With $R$ the additional radius variable along
+the cone and $t_\star=91/100$,
+\begin{align*}
+K_2
+&=
+\int_{0}^{18/10-t_\star}
+R\,\Phi(t_\star+R)\,dR
++
+\int_{18/10-t_\star}^{32/10-t_\star}
+R\cdot\tfrac12(32/10-t_\star-R)^2\,dR
+=
+\frac{11197151}{10000000},
+\end{align*}
+by exact Rational antiderivatives (script
+\texttt{nins3\_small\_mass\_bound.py}, cone block). These are the constants used
+below; they are not free parameters.
+
+\paragraph{Intermediate $m^2$-scaled bounds.}
+For $0<m\le1$ let $A_{ab}$ be an inclusion-preserving upper bound for the
+\emph{projected} local density matching the script array \texttt{PdA},
+\[
+A_{ab}
+\;\ge\;
+\bigl|(\mathcal P\delta\alpha_{\mathrm{loc}})^{ab}\bigr|/m^2,
+\]
+and let $B_{\lambda ab}$ bound $|T_\lambda^{ab}|/m^2$. (Thus $A,B$ already absorb
+one $m^{-2}$; they are \emph{not} bounds on the unprojected source alone.)
+Then
+\begin{align*}
+\bigl|\langle E_0^{\mathrm A}\mathcal P\delta\alpha_{\mathrm{loc}},Y\rangle\bigr|
+&\le
+m^2\,K_1\sum_{a,b}A_{ab}\,\|Y^{ab}\|_{L^1},
+\\
+\biggl|\sum_\lambda\langle(E_0^{\mathrm A})^2 T_\lambda,\partial_\lambda Y\rangle\biggr|
+&\le
+m^2\,K_2\sum_{\lambda,a,b}B_{\lambda ab}\,\|\partial_\lambda Y^{ab}\|_{L^1}.
+\end{align*}
+Therefore
+\[
+|W(m)-W(0)|
+\le
+m^2\Biggl[
+K_1\sum_{a,b}A_{ab}\,\|Y^{ab}\|_1
++
+K_2\sum_{\lambda,a,b}B_{\lambda ab}\,\|\partial_\lambda Y^{ab}\|_1
+\Biggr]
+\qquad(0\le m\le1).
+\]
+Every term accumulated by the script (projected local $A_{ab}\|Y^{ab}\|_1$,
+nonlocal $B_{\lambda ab}\|\partial_\lambda Y^{ab}\|_1$, cone constants $K_1,K_2$,
+and the final outward $C_{\mathrm{hi}}$) appears in this inequality.

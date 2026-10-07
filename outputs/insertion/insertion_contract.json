@@ -1,0 +1,15 @@
+{
+  "revision": "r12",
+  "gate": "N-Ins.1/2",
+  "option": "insertion completion interface (Gate N-Ins)",
+  "functional_seed": "F_t / t_D / E_F / J_t as constructed",
+  "external_data": "g, sigma, chi_I fixed-external policy",
+  "source": "XII-C / XII-D / XVI-I inheritance",
+  "completion_space": "see completion_space.json (insertion class I_t=F_t+A_0+kappa A_1)",
+  "analytic_domain": "Route A ambient-smooth configurations; Route B not claimed",
+  "Q_U": "Q_U = Q_inv (invariant differential). Separate operation: field-only projection P_0 Q_0 A_0 (Lemma P0Q0A0).",
+  "ansatz": "regular, seed-preserving, antifield-linear insertion completion I_t = F_t + A_0 + kappa A_1 in the Gate N-Ins kernel class, with A_0 = int(h^{*mu nu} U_{mu nu} + phi* V + c*_mu W^mu), gh(U,V,W)=(1,1,2), and seed I_t|_{c=cbar=b=Phi*=0} = F_t",
+  "equations": "insertion closure: Q_inv I_t = O(kappa^2); degree-zero: P_0 Q_0 A_0 = -s_0 F_t (field-only projection of Q_0 A_0; Lemma P0Q0A0). N-Ins.4 remains Unresolved as a universal completion statement.",
+  "pass": true,
+  "pass_means": "contract text agrees with H4 / Lemma P0Q0A0 / Thm massless hypotheses; does not claim universal N-Ins.4 completion"
+}

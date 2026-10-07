@@ -1,0 +1,43 @@
+{
+  "gate": "B2_small_mass_bound",
+  "revision": "r10",
+  "t_star": "5/2",
+  "m_max": 1,
+  "method": "inclusion-preserving iv; Rational coeffs; no float in certified path",
+  "delta_vanishes_at_m0": true,
+  "validated_sup_bounds": {
+    "chi_prime_sup_iv": "[0.0, 2.00480577852383740389652596891407229168099417]",
+    "sup|psi|": "[6.25, 6.25]",
+    "sup|d_t psi|": "[0.0, 125.30036115773983774353287305712951823006613]",
+    "sup|d_i psi|": "[0.0, 67.6501805788699188717664365285647591150337999]",
+    "|tau|<=": "7/10",
+    "|x|<=": "5/2",
+    "|1-cos|/m^2<=": "[0.244999999999999999999999999999999999999999196, 0.245000000000000000000000000000000000000002066]",
+    "|sin|/m<=": "7/10"
+  },
+  "cone_constants": {
+    "K1": "1113/500",
+    "K2": "11197151/10000000"
+  },
+  "C_release": "17843",
+  "W_release": "16783/50000000",
+  "m_release": "2743/20000000",
+  "exact_rational_C_m2_lt_W": true,
+  "C_iv_upper": "17842.20259675581924055395044357475854733",
+  "C_hi": "17842.202596755819241",
+  "C_hi_le_17843": true,
+  "W0_lo": "3356658813923791779169926594045241500781/10000000000000000000000000000000000000000000",
+  "W0_certified_lower": "3356658813923791779169926594045241500781/10000000000000000000000000000000000000000000",
+  "W_release_le_W0": true,
+  "m_star_advertised": "0.00013715",
+  "advertised_interval": "0 <= m < 1.3715e-4",
+  "m_star_raw_diagnostic": "0.00013716059698465440588",
+  "m_star_diagnostic_note": "raw mp.sqrt diagnostic only; not a downward-rounding claim",
+  "status": "certified",
+  "conditional_on": "inherited reduction identities; configuration-space admissibility (Route A); massless enclosure lower bound; written small_mass_estimate.tex",
+  "instance_family": "f_m=(Box+m^2)psi, phi_m=x^1 cos(m(t-5/2)), v_f=psi; h,xi,psi,g,sigma,U fixed",
+  "pass": true,
+  "statement": "Exact Rational: C_release*m_release^2 < W_release; C_iv_upper<=C_release; W_release<=W0_lo; hence W(m)>0 on 0 <= m < 1.3715e-4. inherited reduction identities; configuration-space admissibility (Route A); massless enclosure lower bound; written small_mass_estimate.tex",
+  "float_leakage": false,
+  "seconds": 28.9
+}

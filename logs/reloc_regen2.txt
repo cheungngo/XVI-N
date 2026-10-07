@@ -1,0 +1,117 @@
+Removing /tmp/XVI-N-r12-reloc/build
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_stub_path_absence.py  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_convention_consistency.py  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_schema_failure.py  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/tests/test_repro_and_failure.py --unit  (cwd=/tmp/XVI-N-r12-reloc)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/conventions/source_of_truth.py  (cwd=/tmp/XVI-N-r12-reloc/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/conventions/check_ms_coefficients.py  (cwd=/tmp/XVI-N-r12-reloc/code/conventions)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/brst_normalization.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (4.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/qd2_antifield_test.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (17.6s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/qd2_general_jets.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (26.1s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/extended_action_master.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/classical_bv_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (4.6s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/generator_antibracket_test.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/field_only_projection_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (8.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/classical_bv/s_psi_coefficients.py  (cwd=/tmp/XVI-N-r12-reloc/code/classical_bv)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/normalization/free_hessian_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/normalization)
+OK (0.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/prep/prepared_noether_af0.py  (cwd=/tmp/XVI-N-r12-reloc/code/prep)
+OK (60.2s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/prep/independent_weighted_euler.py  (cwd=/tmp/XVI-N-r12-reloc/code/prep)
+OK (22.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/prep/prepared_gauge_variation.py  (cwd=/tmp/XVI-N-r12-reloc/code/prep)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/export_nins12_contracts.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/root_adjoint_H.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (3.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/root_adjoint_Ddiv_Dgf_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (3.2s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_4D_special_family_analytic.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (521.6s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_1p1_corrected.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (152.4s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_support_lemma_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (1.8s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/onshell_admission_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/onshell_structural_check.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/parity_control_symmetric.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (6.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_4D_kirchhoff_corrected.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (2.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/insertion_variation.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.3s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_4D_validated_enclosure.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.4s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_small_mass_bound.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (29.5s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/insertion/nins3_status_composer.py  (cwd=/tmp/XVI-N-r12-reloc/code/insertion)
+OK (0.0s)
+$ /workspace/tmp/venv/bin/python /tmp/XVI-N-r12-reloc/code/regression_N.py  (cwd=/tmp/XVI-N-r12-reloc/code)
+OK (90.8s)
+post-run code/ cert audit: PASS (none found)
+archived stale RELEASE_MANIFEST.txt -> RELEASE_MANIFEST.txt.r11-or-earlier.20261007-052722.historical
+archived stale RELEASE_MANIFEST_PREPDF.txt -> RELEASE_MANIFEST_PREPDF.txt.r11-or-earlier.20261007-052722.historical
+wrote pre-PDF provenance RELEASE_MANIFEST_PREPDF.txt
+listings OK (139 files)
+$ pdflatex -interaction=nonstopmode XVI-N.tex  (cwd=/tmp/XVI-N-r12-reloc/manuscript)
+OK (11.0s)
+$ pdflatex -interaction=nonstopmode XVI-N.tex  (cwd=/tmp/XVI-N-r12-reloc/manuscript)
+OK (8.9s)
+RELEASE_STATUS.json written
+{
+  "revision": "r12",
+  "pass": true,
+  "massless_theorem": "conditional_on_inherited_identities",
+  "route_A": "discharged",
+  "route_B": "not_claimed_discharged",
+  "arbitrary_prescribed_m_gt_0": "unresolved",
+  "small_mass": {
+    "status": "certified",
+    "advertised_interval": "0 <= m < 1.3715e-4",
+    "C_hi": "17842.202596755819241",
+    "C_hi_le_17843": true,
+    "exact_rational_C_m2_lt_W": true
+  },
+  "XVI-M_sha256": "41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea",
+  "pdf_pages": 189,
+  "pdf_sha256_external": "fce995ce5c386fb92ab8892e8b933c86ebf37a63fcbb3fbad2181ebb9343f751",
+  "regression": {
+    "math_passed": 44,
+    "math_failed": 0,
+    "pack_passed": 37,
+    "pack_failed": 0,
+    "log": "build/logs/07_regression.txt"
+  },
+  "output_root": "build/outputs",
+  "interpreter": "sys.executable",
+  "reference_outputs": "immutable_during_pipeline",
+  "completion_contract": "H4_insertion_class_I_t",
+  "blockers_fixed": [
+    "completion_contract_H4",
+    "no_prep_fabricate",
+    "required_script_precheck",
+    "classical_bv_strict_schema",
+    "free_hessian_build_outputs_only",
+    "post_run_code_cert_audit",
+    "prepdf_then_external_manifest",
+    "immutable_reference_outputs",
+    "K1_source_sup_norm_wording"
+  ]
+}

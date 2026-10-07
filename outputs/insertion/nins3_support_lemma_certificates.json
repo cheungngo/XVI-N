@@ -1,0 +1,114 @@
+{
+  "gate": "A2_support_lemma",
+  "revision": "r9",
+  "P1_exact_containments": {
+    "kap0_one_on_suppbeta": true,
+    "mu_one_on_supplam": true,
+    "sigma_one_on_suppbeta": true,
+    "beta_one_on_suppS": true,
+    "supp_g_in_open_slab": true,
+    "Ubar_in_plateau": true,
+    "cone_R_range_from_Ubar": [
+      "9/10",
+      "21/10"
+    ],
+    "cone_r_range": [
+      "0.72679492",
+      "2.2732051"
+    ],
+    "cone_r_range_strictly_in_lam_plateau": true,
+    "cone_t_range_strictly_in_beta_plateau": true,
+    "supp_alpha_time_in_suppS": true,
+    "pass": true
+  },
+  "P2_symbolic_actual_eq_model": {
+    "alpha_actual_eq_model_on_plateau_set": true,
+    "Ddiv_alpha_actual_eq_model_on_plateau_set": true,
+    "J_mod_eq_Ddiv_alpha_mod": true,
+    "alpha_on_N_proportional_to_S": true,
+    "J_mod": [
+      "x*Derivative(S(t), t)",
+      "3*S(t)",
+      "0",
+      "0"
+    ],
+    "pass": true
+  },
+  "P3_numeric_corroboration": {
+    "max_dev_actual_vs_model_J_at_cone_points": "3.39e-21",
+    "points": [
+      {
+        "q": [
+          "2.57331",
+          "0.340029",
+          "0.0014548",
+          "1.61218"
+        ],
+        "dev": "3.39e-21"
+      },
+      {
+        "q": [
+          "2.53776",
+          "-0.762752",
+          "0.053831",
+          "-1.18132"
+        ],
+        "dev": "2.12e-22"
+      },
+      {
+        "q": [
+          "2.55099",
+          "-0.594195",
+          "-0.947123",
+          "-0.973439"
+        ],
+        "dev": "0.0"
+      },
+      {
+        "q": [
+          "1.94382",
+          "-0.364892",
+          "0.0902458",
+          "-0.980115"
+        ],
+        "dev": "0.0"
+      },
+      {
+        "q": [
+          "2.43873",
+          "-0.692007",
+          "0.321307",
+          "-1.04667"
+        ],
+        "dev": "0.0"
+      },
+      {
+        "q": [
+          "2.3041",
+          "-0.0454924",
+          "-0.0290805",
+          "-1.28264"
+        ],
+        "dev": "3.39e-21"
+      }
+    ],
+    "alpha_actual_zero_on_U_point": true,
+    "w_quadrature": [
+      -0.0241380064487576,
+      2.661215210975533
+    ],
+    "w_closed_form": [
+      -0.024138006448757524,
+      2.661215210975517
+    ],
+    "w_rel_dev": [
+      3.16214319956437e-15,
+      6.0074854106751665e-15
+    ],
+    "pass": true,
+    "note": "numerical corroboration only; the lemma is P1+P2"
+  },
+  "vartheta": "vartheta(y^0)=1 on a neighbourhood of [0,T] (XII-D eq:compact-root); U and all cone points used lie in (0,T)",
+  "chi_I": "chi_I does not occur in t_D (XVI-I eq:push / XVI-H thm:trep / XII-D B_{f,g}); it enters only the XVI-J/K interaction V(h)=int chi_I l_3 used for extension/ambiguity terms, which are outside F_t",
+  "pass": true
+}

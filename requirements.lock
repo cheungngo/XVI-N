@@ -1,0 +1,4 @@
+# Python package pins for XVI-N (r12). System tools: see ENVIRONMENT.md.
+mpmath==1.3.0
+numpy==2.5.3
+sympy==1.14.0

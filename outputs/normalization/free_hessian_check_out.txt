@@ -1,0 +1,10 @@
+Gate N-Norm / free_hessian_check
+write_path: /workspace/XVI-N-r10/build/outputs/normalization/free_hessian_check_out.txt
+cert_path: /workspace/XVI-N-r10/build/outputs/normalization/propagator_normalization_certificates.json
+identity_holds: True
+P^2=id: True
+K = -Box P already includes S_gf: True
+XI G_gr^R = -P E_0^R  NOT equated with  X-sheet Delta_R^gr = -4 P E_0^R
+D_F = -P (h_0 + i E_0^A); K D_F = i id
+S = (1/(4 pi^2))(Q - i0)^{-1}
+All 16 Hessian components match -Box P.

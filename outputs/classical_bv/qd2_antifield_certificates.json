@@ -1,0 +1,28 @@
+{
+  "gate": "Q_D2_antifield_smeared",
+  "pass": true,
+  "formula": "Q_D^2 F = (B_tot, F); F=int f_mu c^{*mu}; (B_tot,F)=(-kappa/2) int f_mu B^mu +O(kappa^2)",
+  "master_square_sign": "(S,S)= -kappa int c^nu B_nu + O(kappa^2)",
+  "trials_ok": 6,
+  "trials": 6,
+  "samples": [
+    {
+      "pairing_density_coeff": "-8909/54",
+      "B": [
+        "8909/27",
+        "-2717/36",
+        "86731/216",
+        "5009/54"
+      ]
+    },
+    {
+      "pairing_density_coeff": "147551/432",
+      "B": [
+        "-147551/216",
+        "-9974/27",
+        "-26761/216",
+        "-8531/108"
+      ]
+    }
+  ]
+}

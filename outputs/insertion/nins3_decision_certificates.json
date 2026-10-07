@@ -1,0 +1,29 @@
+{
+  "gate": "N-Ins.3_decision",
+  "revision": "r12",
+  "pass": true,
+  "route_A": "discharged",
+  "route_B": "not claimed discharged",
+  "arbitrary_prescribed_m": "unresolved",
+  "support_lemma": true,
+  "admission": true,
+  "projection": true,
+  "small_mass": {
+    "revision": "r10",
+    "pass": true,
+    "status": "certified",
+    "C_hi": "17842.202596755819241",
+    "C_hi_le_17843": true,
+    "W0_lo": "3356658813923791779169926594045241500781/10000000000000000000000000000000000000000000",
+    "m_star_advertised": "0.00013715",
+    "advertised_interval": "0 <= m < 1.3715e-4",
+    "conditional_on": "inherited reduction identities; configuration-space admissibility (Route A); massless enclosure lower bound; written small_mass_estimate.tex",
+    "instance_family": "f_m=(Box+m^2)psi, phi_m=x^1 cos(m(t-5/2)), v_f=psi; h,xi,psi,g,sigma,U fixed"
+  },
+  "decision": {
+    "N-Ins.3": "Analytic 4D nonvanishing for the massless special family, conditional on the inherited reduction identities and configuration-space admissibility (Route A sufficient; Route B not claimed discharged); certified small-mass 0 <= m < 1.3715e-4",
+    "N-Ins.4": "Unresolved"
+  },
+  "schema": "r12",
+  "output_root": "/workspace/XVI-N-r10/build/outputs"
+}

@@ -1,0 +1,18 @@
+{
+  "revision": "r12",
+  "milestones": {
+    "N-Ins.3": {
+      "status": "Analytic 4D nonvanishing for the massless special family, conditional on the inherited reduction identities and configuration-space admissibility (Route A sufficient; Route B not claimed discharged); certified small-mass 0 <= m < 1.3715e-4"
+    },
+    "N-Ins.4": {
+      "status": "Unresolved"
+    }
+  },
+  "statuses": {
+    "proved_obstructed_claim_withdrawn": true,
+    "toy_witness_removed": true,
+    "inadmissible_asymmetric_witness_withdrawn": true,
+    "route_B_not_claimed_discharged": true,
+    "arbitrary_prescribed_m_unresolved": true
+  }
+}

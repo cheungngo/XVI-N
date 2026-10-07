@@ -1,0 +1,17 @@
+XVI-N r12 RELEASE MANIFEST (EXTERNAL; post-PDF; PDF hash NOT embedded in PDF)
+date: 2026-10-07
+pages: 188
+PDF sha256 (external): 7c6daa395fbdbd503e85fa6f789eed8a0ee73ea3653702c1e5b3581eb81ef864
+XVI-M.tex sha256 (unchanged): 41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea
+regression_math: 44 pass / 0 fail
+regression_pack: 37 pass / 0 fail
+small-mass: 0 <= m < 1.3715e-4 status=certified
+Route B: not claimed discharged
+arbitrary m>0: unresolved
+output_root: build/outputs
+reference_outputs: immutable during normal pipeline
+
+69d60556798927bfd5c0c6dc9fcfcdd1754fff2609a48d2710cc77b58add1538  manuscript/XVI-N.tex
+0846f9fec6f023ddd66b45ad6f26abec4a2716a9394cdb2c010fb07a146b8bbf  manuscript/body/XVI-N-body.tex
+7a3601164609aa4d1e0466086258c6a95c722f523a5a34d7ae52c72ab8cc710a  manuscript/notes/small_mass_estimate.tex
+41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea  provenance/XVI-M.tex

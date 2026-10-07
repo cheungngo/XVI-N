@@ -1,0 +1,32 @@
+\documentclass{article}
+\input{preamble.tex}
+
+\title{Landmark XVI-N --- Scientific manuscript\\
+\large Classical completion --- PreparedClassicalBVInterfaceThroughOrderKappa\\
+\large Science volume only (r12)}
+\author{XVI-N r12 science volume}
+\date{2026-10-07}
+
+\begin{document}
+\maketitle
+\noindent\textbf{Science volume.}
+This PDF is the \emph{scientific manuscript only} for Landmark XVI-N (revision r12).
+It contains Part~I of the combined package: the body and the scientific notes it
+inputs (support lemma, massless-obstruction hypotheses, on-shell admission,
+field-only projection, mass-dependence / small-mass estimates, scaling audit, etc.).
+It does \emph{not} include computational listings, note-source archives, or provenance
+manuscript dumps---those live in the companion appendix volume
+\texttt{XVI-N-appendix.pdf} and in the combined \texttt{XVI-N.pdf}.
+
+\noindent\textbf{Status (unchanged).}
+Massless obstruction is conditional (Route~A); Route~B and arbitrary prescribed $m>0$
+remain unresolved; certified small-mass interval $0\le m<1.3715\times10^{-4}$.
+
+\tableofcontents
+\newpage
+% Suppress the nested \tableofcontents inside body/XVI-N-body.tex
+\let\tableofcontents\relax
+
+\input{body/XVI-N-body.tex}
+
+\end{document}

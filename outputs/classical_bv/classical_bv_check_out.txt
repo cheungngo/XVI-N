@@ -1,0 +1,11 @@
+gate: N-CME (revised)
+revision: r12
+verdict: PASS_INTERFACE
+meaning: constructs the unprepared classical BV complex and its explicitly broken prepared-action extension through the declared order
+s2_unrestricted_2jets: True
+negative_controls: True
+Q_D_squared_nonzero: True
+full_retained_order_broken_master_identity: Constructed
+N_A_release: Constructed
+pass: True
+schema: r12_strict_Q_D_squared

@@ -1,0 +1,87 @@
+{
+  "gate": "N-Ins.3_1p1_planar_auxiliary_model_corrected",
+  "structural_identity_d1J1-d0J0=1/2Box(s psi_x)": true,
+  "structural_consequence": "for h_01 linear, C|_U is built from H^{00}=H^{11}=d_1w^1-d_0w^0=E^A(1/2 Box(s psi_x))|_U=1/2 (s psi_x)|_U=0, so the corrected variation vanishes identically for every xi in this configuration",
+  "configs": {
+    "r7_config_h01=t-x_xi0": {
+      "superseded_J=D_div_P_alpha": {
+        "I_A": "-307/8108100",
+        "I_B": "-307/8108100",
+        "s0Ft": "307/4054050"
+      },
+      "corrected_J=D_div_alpha": {
+        "I_A": "0",
+        "I_B": "0",
+        "s0Ft": "0",
+        "s0Ft_float": 0.0
+      },
+      "methods_agree": true
+    },
+    "h01=t-x_xi1": {
+      "superseded_J=D_div_P_alpha": {
+        "I_A": "307/8108100",
+        "I_B": "307/8108100",
+        "s0Ft": "-307/4054050"
+      },
+      "corrected_J=D_div_alpha": {
+        "I_A": "0",
+        "I_B": "0",
+        "s0Ft": "0",
+        "s0Ft_float": 0.0
+      },
+      "methods_agree": true
+    },
+    "h22=t_xi0": {
+      "superseded_J=D_div_P_alpha": {
+        "I_A": "0",
+        "I_B": "0",
+        "s0Ft": "0"
+      },
+      "corrected_J=D_div_alpha": {
+        "I_A": "0",
+        "I_B": "0",
+        "s0Ft": "0",
+        "s0Ft_float": 0.0
+      },
+      "methods_agree": true
+    },
+    "h01=t-x_xi0_s=-(t-2)(3-t)": {
+      "superseded_J=D_div_P_alpha": {
+        "I_A": "-1891/2494800",
+        "I_B": "-1891/2494800",
+        "s0Ft": "1891/1247400"
+      },
+      "corrected_J=D_div_alpha": {
+        "I_A": "-1/4725",
+        "I_B": "-1/4725",
+        "s0Ft": "2/4725",
+        "s0Ft_float": 0.0004232804232804233
+      },
+      "methods_agree": true
+    },
+    "h22=t_xi0_s=-(t-2)(3-t)": {
+      "superseded_J=D_div_P_alpha": {
+        "I_A": "421/1425600",
+        "I_B": "421/1425600",
+        "s0Ft": "-421/712800"
+      },
+      "corrected_J=D_div_alpha": {
+        "I_A": "1891/9979200",
+        "I_B": "1891/9979200",
+        "s0Ft": "-1891/4989600",
+        "s0Ft_float": -0.00037898829565496234
+      },
+      "methods_agree": true
+    }
+  },
+  "r7_record_reproduced_307/4054050": true,
+  "r7_config_corrected_value": "0",
+  "nonzero_corrected_configs": {
+    "h01=t-x_xi0_s=-(t-2)(3-t)": "2/4725",
+    "h22=t_xi0_s=-(t-2)(3-t)": "-1891/4989600"
+  },
+  "vanishing_mechanism_s=-psi": "with s=-psi, s d_v psi = -1/2 d_v(psi^2); the 1+1 advanced field on U only sees the u-characteristics through the late square, along which v-derivatives of compact data integrate to 0",
+  "label": "Exact nonzero variation in a 1+1 planar auxiliary model (configuration(s) with time-only ramp s=-(t-2)(3-t), corrected root); the r7 configuration (h_01=t-x) gives exactly 0 after correction and its value 307/4054050 is withdrawn; no frozen-4D completion obstruction established.",
+  "not_frozen_4D_reason": "(i) (t,x)-only data are not compact in 4D; the (t,x)-only cutoff and ramp data are not elements of C_c^inf(M_T;[0,1]) as 4D fields; (ii) the 1+1 Green function 1/2 theta differs from the 4D advanced kernel (Huygens); (iii) p=1 bumps are only C^0; (iv) no lower-dimensional BV theory, seed or completion class is specified, so no obstruction claim is made.",
+  "pass": true
+}

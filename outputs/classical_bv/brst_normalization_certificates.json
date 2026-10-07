@@ -1,0 +1,56 @@
+{
+  "normalization": {
+    "a": "1/2",
+    "xi_mu": "a * c^mu",
+    "symmetrization_includes_half": true,
+    "R_0(c)": "partial_(mu c_nu)",
+    "s0_h": "R_0(c)",
+    "s1_h": "a L_c h",
+    "s0_c": "0",
+    "s1_c": "a c^rho partial_rho c^mu",
+    "s0_cbar": "i b",
+    "s1_cbar": "0",
+    "s0_b": "0",
+    "s1_b": "0",
+    "equivalent_form": "s h = (1/2) L_c (eta + kappa h)",
+    "predecessor_K_xi_note": "XI-A/XII-C delta_xi gamma = K_pred xi + kappa L_xi gamma; R0_pred(xi):=K_pred xi renamed; R_0(c)=R0_pred(a c); K:=-Box P only.",
+    "matches_XIV_A_def_kin": true
+  },
+  "s2_checks": {
+    "free_s0": {
+      "s0_h": "R_0(c)",
+      "s0_c": "0",
+      "s0_cbar": "i b",
+      "s0_b": "0",
+      "s0_squared": true,
+      "evidence": "written derivation (XI-B lem:nilpotence); trivial on generators"
+    },
+    "interacting_unrestricted_2jets_correct": {
+      "n_trials": 30,
+      "failures": 0,
+      "pass": true,
+      "jet_order": "unrestricted 2-jets (independent rational components)",
+      "a": "1/2",
+      "sign": 1
+    },
+    "negative_wrong_a": {
+      "n_trials": 10,
+      "failures": 10,
+      "pass": false,
+      "jet_order": "unrestricted 2-jets (independent rational components)",
+      "a": "1",
+      "sign": 1
+    },
+    "negative_wrong_sign": {
+      "n_trials": 10,
+      "failures": 10,
+      "pass": false,
+      "jet_order": "unrestricted 2-jets (independent rational components)",
+      "a": "1/2",
+      "sign": -1
+    },
+    "negative_controls_ok": true
+  },
+  "evidence_kind": "reported computation (exact Q unrestricted 2-jet samples) + written free nilpotence",
+  "scope_note": "Samples probe generic unrestricted 2-jets; not a closed-form coefficientwise identity printout for every monomial. Free s0^2 is exact on generators."
+}

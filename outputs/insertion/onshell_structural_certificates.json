@@ -1,0 +1,40 @@
+{
+  "gate": "onshell_structural_check",
+  "pass": true,
+  "kernel": "ACTUAL J_3 from ell_3 (XII-C eq:ell3/eq:J3) via grav_density; reduction uses actual t_D root form",
+  "NOT_a_toy_kernel_witness": true,
+  "reduction": "s0 F_t = 2 int a_{f,g}[phi] : J_D(R0(c), h)  (XVI-H eq:O-root / XVI-I eq:s0Ft)",
+  "free_shell": "invariant G_lin: A=2G_lin; TT cos(t-z) jet at 0",
+  "A_zero_on_TT": true,
+  "J3_pol_R0_h_identically_zero_on_shell": false,
+  "J3_pol_sample": [
+    [
+      "1",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "eta_contraction": "0",
+  "generic_a_contraction": "3",
+  "interpretation": "On the invariant free shell, J_3^{pol}(R0,h) is not the zero tensor (actual cubic Euler polarization). Local int J3[h]:R0 vanishes on shell, but s0 F_t pairs a_{f,g}[phi] against J_D(R0,h). Vanishing of the actual s0 F_t on shell is therefore not implied by Ah=0 alone. A completed nonzero evaluation against the explicit root a_{f,g} (XII-D eq:alpha/eq:beta/eq:compact-root) was not carried out; c^{J_3}_{alpha beta} remain unexpanded. Outcome for actual-seed obstruction: Unresolved (not Proved obstructed).",
+  "status_contribution": "Unresolved"
+}

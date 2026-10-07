@@ -1,0 +1,46 @@
+{
+  "gate": "af0_prepared_Noether",
+  "pass": true,
+  "elapsed_sec": 59.32280445098877,
+  "jet_order": "unrestricted rational 3-jets (h,\u2202h,\u2202\u2202h,\u2202\u2202\u2202h independent) \u2014 covers O(\u03ba) EH cubic densities needing \u22643 derivatives; plus degree-4 sparse polynomial families at random rational basepoints (retained-jet order 3 unrestricted + poly locus order 4)",
+  "method2": "N0(A)=0; N0(J3)+Q(A)=0; B=N0(Z) with Z=w J3+Dsource; const-w B=-w Q(A)",
+  "method1": "product-rule IBP densities for A, J3, Ew=sigma J3+Ds (Euler-of-divergence=0)",
+  "XII_C_match": "B_nu = -w Q_nu(A h) + R_sigma,nu with R_sigma = B + w Q(A); delta_xi S = \u222b \u03be^\u03bd (-\u03ba B_\u03bd) + O(\u03ba\u00b2); no sign/factor discrepancy observed vs XII-C",
+  "discrepancy_with_XII_C": null,
+  "numeric_stats": {
+    "trials": 20,
+    "N0A": 20,
+    "lem": 20,
+    "prA": 20,
+    "prJ": 20,
+    "prW": 20,
+    "nat": 20,
+    "bulk": 19,
+    "neg": 19,
+    "B_eq_bulk_plus_R": 0,
+    "sample_B": [
+      "-255/2",
+      "151/12",
+      "2189/18",
+      "-615/2"
+    ]
+  },
+  "numeric_failures_head": [],
+  "poly_stats": {
+    "seeds": 3,
+    "points": 6,
+    "ok_points": 6,
+    "n_failures": 0
+  },
+  "method2_spot": {
+    "lem": true,
+    "const_w_B_eq_minus_wQ": true,
+    "w": "1/2"
+  },
+  "controls": {
+    "naturality_sigma1": true,
+    "bulk_minus_wQ_nonzero": true,
+    "negative_drop_wQ": true,
+    "const_w_neq1": true
+  }
+}

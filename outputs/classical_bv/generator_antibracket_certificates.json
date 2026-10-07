@@ -1,0 +1,64 @@
+{
+  "gate": "generator_antibracket_r6",
+  "pass": true,
+  "fields": {
+    "h": {
+      "sigma": 1,
+      "s_H_over_s_table": 1,
+      "match": true,
+      "coupling": "+h* sh"
+    },
+    "phi": {
+      "sigma": 1,
+      "s_H_over_s_table": 1,
+      "match": true,
+      "coupling": "+phi* sphi"
+    },
+    "c": {
+      "sigma": -1,
+      "s_H_over_s_table": 1,
+      "match": true,
+      "coupling": "-c* sc"
+    },
+    "cbar": {
+      "sigma": -1,
+      "s_H_over_s_table": 1,
+      "match": true,
+      "coupling": "-cbar* scbar"
+    },
+    "b": {
+      "match": true,
+      "note": "sb=0; no b* in S_af"
+    }
+  },
+  "antifields": {
+    "rule": "s Phi*_A = (S, Phi*_A)",
+    "forbidden": "s Phi* = (Phi*, S)",
+    "pass": true,
+    "fields_tested": [
+      "h*",
+      "phi*",
+      "c*",
+      "cbar*",
+      "b*"
+    ],
+    "note": "For antifield-linear S=S_field+S_af, (S, Phi*_A) extracts delta S_field/delta Phi^A (KT) with graded signs from S_af. Regression records orientation; full jet KT check deferred to classical_bv Q^2 suite on S_inv."
+  },
+  "expanded_signs": {
+    "c_star_cc": "-kappa*1/2",
+    "cbar_star_b": "-i",
+    "c_star_negative": true,
+    "cbar_star_negative": true,
+    "pass": true
+  },
+  "master_sign": {
+    "SS_equals": "-kappa int c B",
+    "SD_SD": "kappa int c (B_g - B) + O(kappa^2)",
+    "Bg_location": "prepared/switched breaking",
+    "pass": true
+  },
+  "Q2_Sinv_retained_order": {
+    "pass": true,
+    "source": "brst_normalization_certificates.json"
+  }
+}

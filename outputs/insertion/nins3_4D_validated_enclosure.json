@@ -1,0 +1,25 @@
+{
+  "gate": "N-Ins.3_4D_validated_enclosure",
+  "revision": "r11",
+  "I_b_enclosure": "[1.20665032243787617533623799633048339480439142, 1.20715032243787617533623799633048339486281753]",
+  "m0_enclosure": "[0.603325161218938087668118998165241697402195708, 0.603575161218938087668118998165241697431408763]",
+  "int_xi2_enclosure": "[0.000139089956365407915448703855011995844909594766, 0.000139320638659644633726027287178655781621857008]",
+  "s0Ft_enclosure": "[0.000335665881392379177916992659404534150078149078, 0.000336361907760481712819266221928263640244584952]",
+  "s0Ft_enclosure_lo_rational": "3356658813923791779169926594045241500781/10000000000000000000000000000000000000000000",
+  "W0_certified_lower_rational": "3356658813923791779169926594045241500781/10000000000000000000000000000000000000000000",
+  "partition": {
+    "I_b_cells": 4000,
+    "method": "monotone lower/upper Riemann sums; outward iv evaluation",
+    "export": "lo_rational = Fraction(nstr(L))-1e-35 (downward pad)"
+  },
+  "zero_excluded": true,
+  "error_budget": {
+    "quadrature": "monotone lower/upper Riemann sums with outward-rounded interval evaluation (rigorous)",
+    "support": "exact by construction",
+    "regularity": "all data C^infty",
+    "root": "closed forms in m0; no numerical root error",
+    "endpoint_export": "Rational downward-padded from iv lower endpoint"
+  },
+  "conditional_on": "inherited reduction chain; m=0 special family",
+  "pass": true
+}

@@ -1,0 +1,15 @@
+{
+  "gate": "A4_field_only_projection",
+  "revision": "r11",
+  "N_sites": 3,
+  "F1_(S0,Phi)=s0Phi_on_generators": true,
+  "F2_P0(S0,A0)=<Eh,U>+<Ephi,V>_with_Ephi=-M_phi": true,
+  "F2_equiv_<Ah,U>-<(Box+m2)phi,V>": true,
+  "F2_(S0,A0)_has_antifield_terms": true,
+  "F3_P0(S0,c*W)=0_via_hstar_in_deltaS0_deltac": true,
+  "F4_(S0,F)=s0F": true,
+  "F5_field_only_part_zero_on_free_shell": true,
+  "F5_control_nonzero_off_shell": true,
+  "F6_reversed_bracket_gives_minus": true,
+  "pass": true
+}

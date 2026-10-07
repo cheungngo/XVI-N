@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref,bookmark}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,listings,xcolor}
+\usepackage{graphicx}
+\lstset{extendedchars=false,basicstyle=\ttfamily\scriptsize,breaklines=true,columns=fullflexible,keepspaces=true,showstringspaces=false,frame=single,rulecolor=\color{gray!40},numbers=left,numberstyle=\tiny\color{gray},numbersep=4pt}
+\lstdefinestyle{python}{language=Python,keywordstyle=\color{blue!60!black}\bfseries,commentstyle=\color{green!40!black}\itshape,stringstyle=\color{red!60!black}}
+\lstdefinestyle{json}{language={},morestring=[b]",morestring=[b]',sensitive=true}
+\lstdefinestyle{text}{language={}}
+\lstdefinestyle{texfrag}{language=[LaTeX]TeX,basicstyle=\ttfamily\scriptsize}
+\emergencystretch=12em
+\sloppy
+\allowdisplaybreaks
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{gate}[proposition]{Gate}
+\newtheorem{inputstatement}[proposition]{Input}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{nonclaim}[proposition]{Non-claim}
+
+\newcommand{\scopebox}[2]{%
+  \par\medskip\noindent\fbox{\begin{minipage}{0.92\textwidth}
+  \textbf{#1}\par\smallskip #2\end{minipage}}\par\medskip}
+\newcommand{\Pc}{\mathcal P}
+\newcommand{\sigeps}{\sigma_\varepsilon}
+\newcommand{\chiI}{\chi_{\mathrm I}}
+\newcommand{\Ro}{R_0}
+\newcommand{\Rp}{R_0^{\mathrm{pred}}}
+\newcommand{\Ramp}{\mathfrak R}
+\newcommand{\Dsrc}{\mathcal D}
+\newcommand{\Ncal}{\mathcal N}
+% Extra macros that appear in provenance manuscripts (no-ops / stubs if unused)
+\newcommand{\RL}{\mathfrak R_{\mathrm L}}
+\newcommand{\RK}{\mathfrak R_{\mathrm K}}
+\newcommand{\RM}{\mathfrak R_{\mathrm M}}
+\newcommand{\JD}{\mathcal J_{\mathrm D}}
+\newcommand{\Ccoh}{\mathcal C_{\mathrm{coh}}}
+\newcommand{\Creg}{\mathcal C_{\mathrm{reg}}}
+\newcommand{\Tcol}{\mathcal T_{\mathrm{collision}}}
+\newcommand{\Coll}{\mathrm{Collapse}}
+\newcommand{\EA}{E_0^{\mathrm A}}
+\newcommand{\ER}{E_0^{\mathrm R}}
+\newcommand{\EAm}{E_m^{\mathrm A}}
+\newcommand{\ERm}{E_m^{\mathrm R}}
+\newcommand{\PP}{\mathcal P}
+\newcommand{\sig}{\sigma_\varepsilon}
+\newcommand{\MT}{M_T}
+\newcommand{\MTo}{M_T^\circ}
+\newcommand{\Pmass}{P_m}
+\newcommand{\Bcal}{\mathcal B}
+\newcommand{\Isol}{\mathcal I_{\mathrm{sol}}}
+\newcommand{\mc}{\mathscr F_{\mathrm{mc,pol}}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\R}{\mathbb{R}}
+
+\title{Landmark XVI-N\\
+\large Classical completion --- PreparedClassicalBVInterfaceThroughOrderKappa\\
+\large Combined manuscript (scientific text + scripts + certificates + provenance)}
+\author{XVI-N r12 release}
+\date{2026-10-06}
+
+\begin{document}
+\maketitle
+\noindent\textbf{Combined package.} This PDF is the self-contained XVI-N release:
+Part~I = scientific manuscript (r12 release; Route B unresolved);
+Part~II = all Python scripts and certificates;
+Part~III = supporting notes;
+Part~IV = provenance predecessors XI-A, XI-B, XII-C, XVI-M and the release manifest.
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\part{Scientific manuscript (XVI-N)}
+%=====================================================================
+% Scientific abstract and body follow (from the r9 XVI-N.tex).
+\input{body/XVI-N-body.tex}
+
+%=====================================================================
+\part{Computational appendix}
+%=====================================================================
+\input{body/part2_listings.tex}
+
+%=====================================================================
+\part{Notes appendix}
+%=====================================================================
+\input{body/part3_notes.tex}
+
+%=====================================================================
+\part{Provenance and references}
+%=====================================================================
+% Provenance manuscripts are included as verbatim source listings to avoid
+% macro clashes with the main document while preserving the full original text
+% and recorded hashes. Cleaned body extracts also ship under provenance/*-body.tex.
+\section{Provenance manuscripts (full source listings)}
+\label{app:prov}
+The XVI-M baseline sha256 is
+\texttt{41aa109935f40ddee3109de62c46329c189b5408007970cc90ed5611dc4739ea}
+(verified unchanged against the package baseline).
+
+\subsection{Baseline hashes and manifests}
+\lstinputlisting[style=text]{listing_src/provenance/baseline_sha256.txt}
+\lstinputlisting[style=text]{listing_src/provenance/baseline_sha256_revision.txt}
+\lstinputlisting[style=json]{listing_src/provenance/N_dependency_manifest.json}
+\lstinputlisting[style=json]{listing_src/provenance/XVI-M_conventions.json}
+
+\subsection{Landmark XI-A (full source)}
+\label{app:XIA}
+\textbf{sha256:} see inventory / \texttt{sha256sum provenance/XI-A.tex}.
+\lstinputlisting[style=texfrag,caption={XI-A.tex}]{listing_src/provenance/XI-A.tex}
+
+\subsection{Landmark XI-B (full source)}
+\label{app:XIB}
+\lstinputlisting[style=texfrag,caption={XI-B.tex}]{listing_src/provenance/XI-B.tex}
+
+\subsection{Landmark XII-C (full source)}
+\label{app:XIIC}
+\lstinputlisting[style=texfrag,caption={XII-C.tex}]{listing_src/provenance/XII-C.tex}
+
+\subsection{Landmark XVI-M (full source)}
+\label{app:XVIM}
+\lstinputlisting[style=texfrag,caption={XVI-M.tex}]{listing_src/provenance/XVI-M.tex}
+
+\subsection{RELEASE\_MANIFEST}
+\label{app:manifest}
+\lstinputlisting[style=text]{listing_src/provenance/RELEASE_MANIFEST.txt}
+
+\end{document}

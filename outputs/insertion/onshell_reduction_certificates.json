@@ -1,0 +1,9 @@
+{
+  "revision": "r12",
+  "inadmissible_nonzero_withdrawn": {
+    "status": "withdrawn_as_NIns_witness"
+  },
+  "N_Ins_3": "Analytic 4D nonvanishing for the massless special family, conditional on the inherited reduction identities and configuration-space admissibility (Route A sufficient; Route B not claimed discharged); certified small-mass 0 <= m < 1.3715e-4",
+  "N_Ins_4": "Unresolved",
+  "route_B": "not claimed discharged"
+}

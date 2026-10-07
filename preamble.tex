@@ -1,0 +1,60 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref,bookmark}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,listings,xcolor}
+\usepackage{graphicx}
+\lstset{extendedchars=false,basicstyle=\ttfamily\scriptsize,breaklines=true,columns=fullflexible,keepspaces=true,showstringspaces=false,frame=single,rulecolor=\color{gray!40},numbers=left,numberstyle=\tiny\color{gray},numbersep=4pt}
+\lstdefinestyle{python}{language=Python,keywordstyle=\color{blue!60!black}\bfseries,commentstyle=\color{green!40!black}\itshape,stringstyle=\color{red!60!black}}
+\lstdefinestyle{json}{language={},morestring=[b]",morestring=[b]',sensitive=true}
+\lstdefinestyle{text}{language={}}
+\lstdefinestyle{texfrag}{language=[LaTeX]TeX,basicstyle=\ttfamily\scriptsize}
+\emergencystretch=12em
+\sloppy
+\allowdisplaybreaks
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{gate}[proposition]{Gate}
+\newtheorem{inputstatement}[proposition]{Input}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{nonclaim}[proposition]{Non-claim}
+
+\newcommand{\scopebox}[2]{%
+  \par\medskip\noindent\fbox{\begin{minipage}{0.92\textwidth}
+  \textbf{#1}\par\smallskip #2\end{minipage}}\par\medskip}
+\newcommand{\Pc}{\mathcal P}
+\newcommand{\sigeps}{\sigma_\varepsilon}
+\newcommand{\chiI}{\chi_{\mathrm I}}
+\newcommand{\Ro}{R_0}
+\newcommand{\Rp}{R_0^{\mathrm{pred}}}
+\newcommand{\Ramp}{\mathfrak R}
+\newcommand{\Dsrc}{\mathcal D}
+\newcommand{\Ncal}{\mathcal N}
+% Extra macros that appear in provenance manuscripts (no-ops / stubs if unused)
+\newcommand{\RL}{\mathfrak R_{\mathrm L}}
+\newcommand{\RK}{\mathfrak R_{\mathrm K}}
+\newcommand{\RM}{\mathfrak R_{\mathrm M}}
+\newcommand{\JD}{\mathcal J_{\mathrm D}}
+\newcommand{\Ccoh}{\mathcal C_{\mathrm{coh}}}
+\newcommand{\Creg}{\mathcal C_{\mathrm{reg}}}
+\newcommand{\Tcol}{\mathcal T_{\mathrm{collision}}}
+\newcommand{\Coll}{\mathrm{Collapse}}
+\newcommand{\EA}{E_0^{\mathrm A}}
+\newcommand{\ER}{E_0^{\mathrm R}}
+\newcommand{\EAm}{E_m^{\mathrm A}}
+\newcommand{\ERm}{E_m^{\mathrm R}}
+\newcommand{\PP}{\mathcal P}
+\newcommand{\sig}{\sigma_\varepsilon}
+\newcommand{\MT}{M_T}
+\newcommand{\MTo}{M_T^\circ}
+\newcommand{\Pmass}{P_m}
+\newcommand{\Bcal}{\mathcal B}
+\newcommand{\Isol}{\mathcal I_{\mathrm{sol}}}
+\newcommand{\mc}{\mathscr F_{\mathrm{mc,pol}}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\R}{\mathbb{R}}

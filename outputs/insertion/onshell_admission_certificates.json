@@ -1,0 +1,19 @@
+{
+  "gate": "A3_onshell_admission",
+  "revision": "r9",
+  "K_riemann_symmetries": true,
+  "G1_divergence_free_identically": true,
+  "G2_Glin_zero_mod_BoxPhi_all_10_components": true,
+  "G2_Glin_not_identically_zero_offshell": true,
+  "G3_plane_wave_components": {
+    "12": "Subs(Derivative(F(_xi_1), (_xi_1, 2)), _xi_1, t - z)/2",
+    "21": "Subs(Derivative(F(_xi_1), (_xi_1, 2)), _xi_1, t - z)/2"
+  },
+  "G3_trace_free": true,
+  "G3_only_12_21": true,
+  "G3_coefficient_c": "1/2",
+  "G4_control_without_Riemann_symmetry_breaks_G1": true,
+  "scalar_phi_m_on_shell": true,
+  "scalar_phi0_eq_x": true,
+  "pass": true
+}
